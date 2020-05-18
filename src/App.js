@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
+import FCivPreviewCard from './components/FCivPreviewCard';
 
-function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
-	);
+const civs = ['Gayrald Fagdrada', 'Wilfag Laurigay', 'Gilgaymesh', 'Alexander the Gayte', 'Faggy Roosevelt', 'Faghelmina'];
+
+export default class App extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<div className="App">
+				{civs.map((civ, i) => (
+					<FCivPreviewCard key={i} civ={civ} description="Large Gay" secondaryDescription="Ultra Gay" />
+				))}
+			</div>
+		);
+	}
 }
-
-export default App;
