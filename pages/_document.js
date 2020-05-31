@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
 				<head>
 					<Head />
 					<link rel="stylesheet" href="/index.css" />
+					<link rel="icon" href="/CIV6.ico" />
 				</head>
 				<body>
 					<Main />
