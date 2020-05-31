@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Head from 'next/head';
 import React, { useEffect, useReducer, useState } from 'react';
 import CivCard from '../components/CivCard';
 import CivList from '../components/CivList';
@@ -63,6 +64,9 @@ const Index = () => {
 	return (
 		<GlobalContext.Provider value={{ dispatchCiv, disabledCivs }}>
 			<h1>Civ Randomizer</h1>
+			<Head>
+				<title>Civ Randomizer</title>
+			</Head>
 			<button
 				id="randomize-button"
 				onClick={() => {
