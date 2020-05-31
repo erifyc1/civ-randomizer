@@ -1,0 +1,20 @@
+import { MongoClient } from 'mongodb';
+
+export default async (req, res) => {
+	try {
+		const client = await MongoClient.connect('mongodb+srv://user:admin@cluster0-o6jvs.mongodb.net/test?retryWrites=true&w=majority', {
+			useUnifiedTopology: true
+		});
+		const db = client.db('civ');
+
+		res.setHeader('Access-Control-Allow-Origin', '*');
+		if (req.query.civ) {
+			res.status(200).json(await db.collection('civs').findOne({ name: req.query.civ }));
+		} else {
+			res.status(200).json((await db.collection('civs').find({}).toArray()).map((civ) => ({ name: civ.name, icon: civ.icon })));
+		}
+	} catch (err) {
+		console.log(err);
+		res.status(500).send('Error');
+	}
+};

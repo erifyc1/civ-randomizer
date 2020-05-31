@@ -1,0 +1,1630 @@
+[
+	{
+		"name": "America",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/9/90/American_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Teddy Roosevelt",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/70/Teddy_Roosevelt_%28Civ6%29.png/",
+				"abilityName": "Roosevelt Corollary",
+				"ability": "Units receive +5 <Combat Strength> Combat Strength on their home continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit with Rifling."
+			}
+		],
+		"abilityName": "Founding Fathers",
+		"ability": "All Diplomatic policy slots in the current government are converted to Wildcard policy slots. Gains +1 <Diplomatic Favor> Diplomatic Favor per turn for every Wildcard slot in their government.",
+		"unit": [
+			{
+				"name": "P-51 Mustang",
+				"strength": "105 vs. 100",
+				"movement": "6 vs. 4",
+				"special": ["+5 <Combat Strength> Combat Strength vs. fighters, +50% experience gain"],
+				"replaces": "Fighter"
+			},
+			{
+				"name": "Rough Rider",
+				"strength": "67",
+				"movement": "5",
+				"special": [
+					"Earns Culture from kills on its Capital's Continent",
+					"Gains +10 <Combat Strength> Combat Strength when fighting on Hills",
+					"No Strategic Resource requirement"
+				],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Film Studio",
+				"district": "Theater Square",
+				"effects": [
+					"+2 <Culture> Culture",
+					"+4 <Culture> Culture when Powered",
+					"Base load: 3 <Power> Power",
+					"+1 <Great Artist> Great Artist Point, +2 <Great Musician> Great Musician Points",
+					"+1 Great Work of Music Slot",
+					"After Modern Era: +100% <Tourism> Tourism pressure from this city towards other civilizations"
+				],
+				"replaces": "Broadcast Center"
+			}
+		]
+	},
+	{
+		"name": "Arabia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/5/58/Arabian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Saladin",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/5/57/Saladin_%28Civ6%29.png/",
+				"abilityName": "Righteousness of the Faith",
+				"ability": "The Worship building for Arabia's Religion can be purchased at 10% of the usual <Faith> Faith cost, and grants Arabian cities with it +10% <Science> Science, <Faith> Faith, and <Culture> Culture."
+			}
+		],
+		"abilityName": "The Last Prophet",
+		"ability": "Automatically receives the final <Great Prophet> Great Prophet when the next-to-last one is claimed (if one has not been earned already). +1 <Science> Science per foreign city following Arabia's Religion.",
+		"unit": [
+			{
+				"name": "Mamluk",
+				"strength": "48",
+				"movement": "4",
+				"special": ["Heals every turn"],
+				"replaces": "Knight"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Madrasa",
+				"district": "Campus",
+				"effects": [
+					"+5 <Science> Science",
+					"+1 <Great Scientist> Great Scientist Point",
+					"+1 <Housing> Housing",
+					"Provides Faith Faith equal to the adjacency bonus of the <Campus> Campus"
+				],
+				"replaces": "University"
+			}
+		]
+	},
+	{
+		"name": "Australia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/c/cf/Australian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "John Curtin",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/b/b9/John_Curtin_%28Civ6%29.png/",
+				"abilityName": "Citadel of Civilization",
+				"ability": "+100% <Production> Production in all cities for the next 10 turns after being declared war upon or liberating a city."
+			}
+		],
+		"abilityName": "Land Down Under",
+		"ability": "+3 <Housing> Housing in coastal cities. Building a Pasture triggers a Culture Bomb, claiming surrounding tiles. <Campus> Campus, <Commercial Hub> Commercial Hub, <Holy Site> Holy Site, and <Theater Square> Theater Square districts gain +1 to their yields in tiles with Charming Appeal, and +3 in tiles with Breathtaking Appeal.",
+		"unit": [
+			{
+				"name": "Digger",
+				"strength": "72 vs. 70",
+				"movement": "2",
+				"special": [
+					"+10 <Combat Strength> Combat Strength on Coastal Tiles",
+					"+5 <Combat Strength> Combat Strength outside of Australian territory",
+					"No Strategic Resource requirement"
+				],
+				"replaces": "Infantry"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Outback Station",
+				"district": null,
+				"effects": [
+					"+1 <Food> Food",
+					"+1 <Production> Production",
+					"+0.5 <Housing> Housing",
+					"+1 <Food> Food from every adjacent Pasture",
+					"Steam Power: +1 <Production> Production to every adjacent Pasture, +1 <Production> Production from every adjacent Outback Station",
+					"Rapid Deployment: +1 <Food> Food from every 2 adjacent Outback Stations"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Aztec",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/b/b6/Aztec_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Montezuma",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/1/1e/Montezuma_%28Civ6%29.png/",
+				"abilityName": "Gifts for the Tlatoani",
+				"ability": "Improved Luxury resources provide an <Amenity> Amenity to 2 extra cities. +1 <Combat Strength> Combat Strength for all units for each different improved Luxury resource in Aztec territory."
+			}
+		],
+		"abilityName": "Legend of the Five Suns",
+		"ability": "Can spend Builder Charges to complete 20% of a district's <Production> Production cost.",
+		"unit": [
+			{
+				"name": "Eagle Warrior",
+				"strength": "28 vs. 20",
+				"movement": "2",
+				"special": ["Higher <Production> Production cost (65 vs. 40)", "Turns defeated enemy units into builders"],
+				"replaces": "Warrior"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Tlachtli ",
+				"district": "Entertainment Complex",
+				"effects": [
+					"+2 <Faith> Faith",
+					"+1 <Amenity> Amenity from Entertainment",
+					"+1 <Great General> Great General Point",
+					"+1 <Culture> Culture",
+					"Conservation: +1 <Tourism> Tourism"
+				],
+				"replaces": "Arena"
+			}
+		]
+	},
+	{
+		"name": "Brazil",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/6/6d/Brazilian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Pedro II",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/7c/Pedro_II_%28Civ6%29.png/",
+				"abilityName": "Magnanimous",
+				"ability": "Recruiting or patronizing a Great Person refunds 20% of their point cost."
+			}
+		],
+		"abilityName": "Amazon",
+		"ability": "Rainforest tiles provide a +1 adjacency bonus for <Campus> Campuses, <Commercial Hub> Commercial Hubs, <Holy Site> Holy Sites, and <Theater Square> Theater Squares, and provide +1 Appeal to adjacent tiles, instead of the usual -1.",
+		"unit": [
+			{
+				"name": "Minas Geraes",
+				"strength": "Combat: 70 vs. 60, Ranged: 80 vs. 70, Anti-Air Strength: 95 vs. 90",
+				"movement": "5",
+				"special": ["Stronger than Battleship, earlier than Battleship"],
+				"replaces": "Battleship"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Street Carnival",
+				"district": null,
+				"effects": [
+					"+2 <Amenity> Amenities from Entertainment",
+					"Unique project, Carnival yields +1 <Amenity> Amenities while active and yields <Great Engineer> Great Engineer Points, <Great Merchant> Great Merchant Points, <Great Writer> Great Writer Points, <Great Artist> Great Artist Points, and <Great Musician> Great Musician Points upon completion"
+				],
+				"replaces": "Entertainment Complex"
+			},
+			{
+				"name": "Copacabana",
+				"district": null,
+				"effects": [
+					"+2 <Amenity> Amenities from Entertainment",
+					"Unique project, Carnival yields +1 <Amenity> Amenities while active and yields <Great Engineer> Great Engineer Points, <Great Merchant> Great Merchant Points, <Great Writer> Great Writer Points, <Great Artist> Great Artist Points, and <Great Musician> Great Musician Points upon completion"
+				],
+				"replaces": "Water Park"
+			}
+		]
+	},
+	{
+		"name": "Canada",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/c/c2/Canadian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Wilfred Laurier",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/b/b0/Wilfrid_Laurier_%28Civ6%29.png/",
+				"abilityName": "The Last Best West",
+				"ability": "Can build Farms on Tundra tiles, and on Tundra Hills tiles with Civil Engineering. Snow, Snow Hills, Tundra Hills, and Tundra tiles cost 50% less Gold to purchase. On those tiles, resources accumulate twice as fast, Mines and Lumber Mills receive +1 <Production> Production and Camps receive +1 <Food> Food."
+			}
+		],
+		"abilityName": "Four Faces of Peace",
+		"ability": "Cannot declare Surprise Wars or war on City-States. Surprise Wars cannot be declared on Canada. For every 100 <Tourism> Tourism earned, gain 1 <Diplomatic Favor> Diplomatic Favor. +100% <Diplomatic Favor> Diplomatic Favor gained from successfully completing Emergencies or Scored Competitions.",
+		"unit": [
+			{
+				"name": "Mountie",
+				"strength": "60 vs. 62",
+				"movement": "5",
+				"special": [
+					"+5 <Combat Strength> Combat Strength when within 2 tiles of a National Park",
+					"+5 Additional Strength if the Park is Canadian",
+					"Has 1 build charge"
+				],
+				"replaces": "Cavalry"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Ice Hockey Rink",
+				"district": null,
+				"effects": [
+					"Must be built on Tundra, Tundra Hills, Snow, Snow Hills",
+					"+1 <Amenity> Amenity",
+					"+2 Appeal to surrounding tiles",
+					"+1 <Culture> Culture for each adjacent Tundra, Tundra Hills, Snow, Snow Hills tile",
+					"Professional Sports: +2 <Food> Food and <Production> Production",
+					"+4 <Culture> Culture if adjacent to Stadium",
+					"1 per city max",
+					"Tiles with Ice Hockey Rinks cannot be swapped"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "China",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/b/be/Chinese_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Qin Shi Huang",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/c/c3/Qin_Shi_Huang_%28Civ6%29.png/",
+				"abilityName": "The First Emperor",
+				"ability": "Builders receive an additional build charge. Can spend Builder charges to complete 15% of the <Production> Production cost for Ancient and Classical wonders. <Canal> Canals are unlocked with Masonry, instead of Steam Power."
+			}
+		],
+		"abilityName": "Dynastic Cycle",
+		"ability": "<Eureka> Eurekas and <Inspiration> Inspirations provide an extra 10% of the <Science> Science and <Culture> Culture cost for researching technologies and civics.",
+		"unit": [
+			{
+				"name": "Crouching Tiger",
+				"strength": "Combat: 30, Ranged: 50",
+				"movement": "2",
+				"special": ["1 Range instead of 2"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Great Wall",
+				"district": null,
+				"effects": [
+					"Acts as Fort",
+					"+2 <Gold> Gold",
+					"+2 <Gold> Gold for each adjacent Great Wall",
+					"Castles: +2 <Culture> Culture for each adjacent Great Wall",
+					"Can be pillaged, but never removed by Natural Disasters"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Cree",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/7/79/Cree_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Poundmaker",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/3/3b/Poundmaker_%28Civ6%29.png/",
+				"abilityName": "Favorable Terms",
+				"ability": "All Alliance types provide Shared Visibility. <Trade Route> Trade Routes grant +1 <Food> Food in the sending city and +1 <Gold> Gold in the destination city per Camp or Pasture at the destination city."
+			}
+		],
+		"abilityName": "Nîhithaw",
+		"ability": "Gains +1 <Trade Route> Trade Route capacity and a free <Trader> Trader with Pottery. Unclaimed tiles within three tiles of a Cree city come under Cree control when a <Trader> Trader first moves into them.",
+		"unit": [
+			{
+				"name": "Okihtcitaw",
+				"strength": "20 vs. 10",
+				"movement": "3",
+				"special": ["40 <Production> Production vs. 30", "Starts with free promotion"],
+				"replaces": "Scout"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Mekewap",
+				"district": null,
+				"effects": [
+					"+1 <Production> Production",
+					"+1 <Housing> Housing",
+					"+1 <Gold> Gold if adjacent to a Luxury Resource",
+					"Civil Service: +1 <Production> Production and <Housing> Housing",
+					"Cartography: +2 <Gold> Gold for each adjacent Luxury Resource",
+					"+1 <Food> Food for every 2 adjacent Bonus Resource",
+					"Conservation: +1 <Food> Food for every adjacent Bonus Resource",
+					"Cannot be built on any Floodplains"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Netherlands",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/b/b0/Dutch_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Wilhelmina",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/4/44/Wilhelmina_%28Civ6%29.png/",
+				"abilityName": "Radio Oranje",
+				"ability": "Domestic <Trade Route> Trade Routes provide +1 Loyalty per turn for the starting city. <Trade Route> Trade Routes sent to or received from a foreign civilization grant +1 <Culture> Culture to the Netherlands."
+			}
+		],
+		"abilityName": "Grote Rivieren",
+		"ability": "Rivers provide a +2 adjacency bonus for <Campus> Campuses, <Theater Square> Theater Squares, and <Industrial Zone> Industrial Zones. Building a <Harbor> Harbor triggers a Culture Bomb, claiming surrounding tiles. +50% <Production> Production toward the <Dam> Dam district and Flood Barrier building.",
+		"unit": [
+			{
+				"name": "De Zeven Provinciën",
+				"strength": "Combat: 50 vs. 45, Ranged: 60 vs. 55",
+				"movement": "4",
+				"special": ["+7 <Ranged Strength> Ranged Strength vs. Defensible Districts"],
+				"replaces": "Frigate"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Polder",
+				"district": null,
+				"effects": [
+					"+1 <Food> Food",
+					"+1 <Food> Food for every adjacent Polder",
+					"+1 <Production> Production",
+					"+0.5 <Housing> Housing",
+					"Civil Engineering: +4 <Gold> Gold",
+					"Replacable Parts: +2 <Food> Food for every adjacent Polder, +1 <Production> Production for every adjacent Polder",
+					"Increases movement cost of tile to 3"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Egypt",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/7/7b/Egyptian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Cleopatra",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/9/98/Cleopatra_%28Civ6%29.png/",
+				"abilityName": "Mediterranean's Bride",
+				"ability": "International <Trade Route> Trade Routes grant +4 <Gold> Gold. <Trade Route> Trade Routes sent to Egypt from other civilizations provide +2 <Food> Food for them and +2 <Gold> Gold for Egypt. +100% Alliance Points from trading with allies."
+			}
+		],
+		"abilityName": "Iteru",
+		"ability": "+15% <Production> Production towards districts and wonders built next to a River. Districts, improvements and units are immune to damage from floods.",
+		"unit": [
+			{
+				"name": "Maryannu Chariot Archer",
+				"strength": "Combat: 25 vs. 28, Ranged: 35",
+				"movement": "4",
+				"special": [
+					"2 <Range> Range",
+					"Higher <Production> Production cost (120 vs. 65)",
+					"Cannot melee attack",
+					"-17 <Ranged Strength> Ranged Strength vs. District defences and naval units"
+				],
+				"replaces": "Heavy Chariot"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Sphinx",
+				"district": null,
+				"effects": [
+					"+1 <Culture> Culture",
+					"Natural History: +1 <Culture> Culture",
+					"+2 Appeal",
+					"+1 <Faith> Faith",
+					"+2 additional <Faith> Faith if next to Wonder",
+					"+1 Culture if built next to floodplains"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "England",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/7/7e/English_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Victoria",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/5/53/Victoria_%28Civ6%29.png/",
+				"abilityName": "Pax Britannica",
+				"ability": "The first city founded on each continent other than their home continent grants a free melee unit in that city and +1 <Trade Route> Trade Route capacity. Building a Royal Navy Dockyard grants a free naval unit in that city. Gain the Redcoat unique unit with Military Science."
+			},
+			{
+				"name": "Eleanor of Aquitaine",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/9/9d/Eleanor_of_Aquitaine_%28Civ6%29.png/",
+				"abilityName": "Court of Love",
+				"ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City."
+			}
+		],
+		"abilityName": "Workshop of the World",
+		"ability": "<Iron> Iron and <Coal> Coal Mines accumulate 2 more resources per turn. +100% <Production> Production towards Military Engineers. Military Engineers receive +2 charges. Buildings that provide additional yields when Powered receive +4 of that yield. +20% <Production> Production towards Industrial Zone buildings. <Harbor> Harbor buildings increase Strategic Resource Stockpiles by +10.",
+		"unit": [
+			{
+				"name": "Sea Dog",
+				"strength": "Combat: 40, Ranged: 50",
+				"movement": "4",
+				"special": ["2 <Range> Range", "Can capture adjacent enemy naval units (but not Barbarian ships or City-state Ships)"],
+				"replaces": "Privateer"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Royal Navy Dockyard",
+				"district": null,
+				"effects": [
+					"+1 <Movement> Movement for all units built in Dockyard",
+					"+2 <Gold> Gold when built on foreign continent",
+					"+2 <Great Admiral> Great Admiral Points",
+					"+4 Loyalty when built on a foreign continent"
+				],
+				"replaces": "Harbor"
+			}
+		]
+	},
+	{
+		"name": "France",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/f/fb/French_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Catherine de Medici",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/0/06/Catherine_de_Medici_%28Civ6%29.png/",
+				"abilityName": "Catherine's Flying Squadron",
+				"ability": "Has an extra level of <Diplomatic Visibility> Diplomatic Visibility with every civilization she's met. Receives a free Spy (and extra Spy capacity) with Castles. All Spies start with a free promotion."
+			},
+			{
+				"name": "Eleanor of Aquitaine",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/7a/Eleanor_of_Aquitaine_%28French%29_%28Civ6%29.png/",
+				"abilityName": "Court of Love",
+				"ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City."
+			}
+		],
+		"abilityName": "Grand Tour",
+		"ability": "+20% <Production> Production towards Medieval, Renaissance, and Industrial Wonders. Double <Tourism> Tourism from Wonders of any era.",
+		"unit": [
+			{
+				"name": "Garde Impériale",
+				"strength": "65",
+				"movement": "2",
+				"special": [
+					"+10 <Combat Strength> Combat Strength on the Starting Capital's home continent",
+					"Earns <Great General> Great General Points from kills"
+				],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Château",
+				"district": null,
+				"effects": [
+					"+2 <Culture> Culture",
+					"+1 Appeal",
+					"+1 <Culture> Culture for each adjacent Wonder, +2 with Flight",
+					"+1 <Gold> Gold for each adjacent Luxury"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Georgia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/c/c2/Georgian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Tamar",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/b/b0/Tamar_%28Civ6%29.png/",
+				"abilityName": "Glory of the World, Kingdom and Faith",
+				"ability": "+100% <Faith> Faith for the next 10 turns after declaring a Protectorate War. Each Envoy sent to a city-state of Georgia's majority Religion counts as two <Envoy> Envoys."
+			}
+		],
+		"abilityName": "Strength in Unity",
+		"ability": "Dedications chosen at the beginning of a Golden Age or Heroic Age also grant their respective Normal Age bonuses towards improving Era Score, in addition to their regular bonuses. +50% <Production> Production towards walls.",
+		"unit": [
+			{
+				"name": "Khevsur",
+				"strength": "45",
+				"movement": "2",
+				"special": ["+7 <Combat Strength> Combat Strength and no <Movement> Movement Penalties on Hills"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Tsikhe",
+				"district": "City Center",
+				"effects": ["Lower <Production> Production Cost (260 vs. 300)", "+4 <Faith> Faith"],
+				"replaces": "Renaissance Walls"
+			}
+		]
+	},
+	{
+		"name": "Germany",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/e/ed/German_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Frederick Barbarossa",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/4/44/Frederick_Barbarossa_%28Civ6%29.png/",
+				"abilityName": "Holy Roman Emperor",
+				"ability": "Gain an additional Military policy slot in all Governments. All units gain +7 <Combat Strength> Combat Strength when attacking city-states."
+			}
+		],
+		"abilityName": "Free Imperial Cities",
+		"ability": "Each city can build one more district than the population level would normally allow.",
+		"unit": [
+			{
+				"name": "U-Boat",
+				"strength": "Combat Strength: 65, Ranged Strength: 75",
+				"movement": "3",
+				"special": ["Lower <Production> Production Costs (430 vs. 480)", "+1 Sight Range, +10 <Combat Strength> Combat Strength when on Ocean Tiles"],
+				"replaces": "Submarine"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Hansa",
+				"district": null,
+				"effects": [
+					"+2 <Production> Production for each adjacent <Commercial Hub> Commercial Hub",
+					"+1 <Production> Production for each adjacent resource",
+					"+0.5 <Production> Production for each adjacent district"
+				],
+				"replaces": "Industrial Zone"
+			}
+		]
+	},
+	{
+		"name": "Greece",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/4/4d/Greek_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Pericles",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/4/40/Pericles_%28Civ6%29.png/",
+				"abilityName": "Surrounded by Glory",
+				"ability": "+5% <Culture> Culture per city-state Greece has Suzerainty over."
+			},
+			{
+				"name": "Gorgo",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/6/68/Gorgo_%28Civ6%29.png/",
+				"abilityName": "Thermopylae",
+				"ability": "Killing a unit provides <Culture> Culture equal to 50% of its <Combat Strength> Combat Strength."
+			}
+		],
+		"abilityName": "Plato's Republic",
+		"ability": "Gain an additional Wildcard policy slot in all Governments.",
+		"unit": [
+			{
+				"name": "Hoplite",
+				"strength": "25",
+				"movement": "2",
+				"special": ["+10 <Combat Strength> Combat Strength when adjacent to at least 1 other Hoplite"],
+				"replaces": "Spearman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Acropolis",
+				"district": null,
+				"effects": ["+2 <Culture> Culture for adjacency to City Center", "+1 <Envoy> Envoy when completed"],
+				"replaces": "Theater Square"
+			}
+		]
+	},
+	{
+		"name": "Hungary",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/3/35/Hungarian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Matthias Corvinus",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/2/25/Matthias_Corvinus_%28Civ6%29.png/",
+				"abilityName": "Raven King",
+				"ability": "Levied city-state units gain +2 <Movement> Movement and +5 <Combat Strength> Combat Strength, and can be upgraded at a 75% discount in <Gold> Gold and resources. Levying troops from a city-state grants 2 <Envoy> Envoys with that city-state. Gain the Black Army unique unit with Castles."
+			}
+		],
+		"abilityName": "Pearl of the Danube",
+		"ability": "+50% <Production> Production for districts and buildings built across a river from a City Center.",
+		"unit": [
+			{
+				"name": "Huszár",
+				"strength": "65 vs. 62",
+				"movement": "5",
+				"special": ["+3 <Combat Strength> Combat Strength for every active Alliance", "Higher <Production> Production Cost (335 vs. 330)"],
+				"replaces": "Spearman"
+			},
+			{
+				"name": "Black Army",
+				"strength": "47 vs. 44",
+				"movement": "5",
+				"special": ["Higher <Production> Production cost (205 vs. 200)", "+3 <Combat Strength> Combat Strength for each adjacent Levied unit"],
+				"replaces": "Courser"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Thermal Bath",
+				"district": "Entertainment District",
+				"effects": [
+					"+2 <Amenity> Amenities from Entertainment (vs. 1)",
+					"+2 <Production> Production to all City Centers within 6 tiles",
+					"+3 <Tourism> Tourism, +2 <Amenitie> Amenities to this city if there is at least 1 Geothermal Fissure within its borders"
+				],
+				"replaces": "Zoo"
+			}
+		]
+	},
+	{
+		"name": "Inca",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/8/85/Incan_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Pachacuti",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/f/f2/Pachacuti_%28Civ6%29.png/",
+				"abilityName": "Qhapaq Ñan",
+				"ability": "Domestic <Trade Route> Trade Routes gain +1 Food for every Mountain tile in the origin city. Gain the Qhapaq Ñan unique improvement with Foreign Trade."
+			}
+		],
+		"abilityName": "Mit'a",
+		"ability": "Citizens may work Mountain tiles. Mountain tiles provide +2 <Production> Production, and +1 <Food> Food for each adjacent Terrace Farm.",
+		"unit": [
+			{
+				"name": "Warak'aq",
+				"strength": "Combat Strength: 20, Ranged Strength: 40",
+				"movement": "3",
+				"special": ["Higher <Production> Production Cost (165 vs. 150)", "1 <Range> Range", "Attacks twice if enough <Movement> Movement allows"],
+				"replaces": "Skirmisher"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Terrace Farm",
+				"district": null,
+				"effects": [
+					"+1 <Food> Food",
+					"+0.5 <Housing> Housing",
+					"+2 <Production> Production for each adjacent <Aqueduct> Aqueduct",
+					"+1 <Production> Production if adjacent to Fresh Water and not <Aqueduct> Aqueduct"
+				],
+				"replaces": null
+			},
+			{
+				"name": "Qhapaq Ñan",
+				"district": null,
+				"effects": ["Acts as Mountain Tunnel", "Cannot be pillaged or removed"],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "India",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/5/5b/Indian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Gandhi",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/2/29/Gandhi_%28Civ6%29.png/",
+				"abilityName": "Satyagraha",
+				"ability": "+5 <Faith> Faith for each met civilization (including India) that has founded a Religion and is not at war. Enemies receive double war weariness from fighting against Gandhi."
+			},
+			{
+				"name": "Chandragupta",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/e/e2/Chandragupta_%28Civ6%29.png/",
+				"abilityName": "Arthashastra",
+				"ability": "Can declare a War of Territorial Expansion with Military Training, instead of Mobilization. +2 <Movement> Movement and +5 <Combat Strength> Combat Strength for all units for the next 10 turns after declaring a War of Territorial Expansion."
+			}
+		],
+		"abilityName": "Dharma",
+		"ability": "Receive the Follower Beliefs of all religions that have at least one follower in a city, not just the majority religion. Cities receive +1 <Amenity> Amenity for each religion with at least one follower in them. +2 Spread Religion charges for Missionaries. +100% Religious pressure from Indian Trade Routes.",
+		"unit": [
+			{
+				"name": "Varu",
+				"strength": "40",
+				"movement": "2",
+				"special": [
+					"Relatively low <Movement> Movement",
+					"High <Production> Production cost (120)",
+					"No Strategic Resource requirement",
+					"Reduces the <Combat Strength> Combat Strength of adjacent enemy units by 5"
+				],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Stepwell",
+				"district": null,
+				"effects": [
+					"+1 <Housing> Housing",
+					"+1 <Food> Food",
+					"+1 <Food> Food if adjacent to a Farm",
+					"+1 <Faith> Faith if adjacent to a <Holy Site> Holy Site",
+					"Prevents Food loss from droughts"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Indonesia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/6/69/Indonesian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Gitarja",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/e/e8/Gitarja_%28Civ6%29.png/",
+				"abilityName": "Exalted Goddess of the Three Worlds",
+				"ability": "May purchase naval units with <Faith> Faith. Religious units pay no movement cost to embark or disembark. City Centers adjacent to Coast or Lake tiles gain +2 <Faith> Faith."
+			}
+		],
+		"abilityName": "Great Nusantara",
+		"ability": "Coast and Lake tiles provide a +0.5 adjacency bonus for <Holy Site> Holy Sites, <Campus> Campuses, <Industrial Zone> Industrial Zones, and <Theater Square> Theater Squares. <Entertainment Complex> Entertainment Complexes built adjacent to a Coast or Lake tile provide +1 <Amenity> Amenity.",
+		"unit": [
+			{
+				"name": "Jong",
+				"strength": "Combat Strength: 45, Ranged Strength: 55",
+				"movement": "5 vs. 4",
+				"special": [
+					"When in formation, +5 <Combat Strength> Combat Strength and shares its <Movement> Movement with all units in the formation",
+					"No Strategic Resource requirement"
+				],
+				"replaces": "Frigate"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Kampung",
+				"district": null,
+				"effects": [
+					"+1 <Production> Production",
+					"+1 <Housing> Housing",
+					"+1 <Food> Food from each adjacent Fishing Boat",
+					"Mass Production: +1 <Housing> Housing",
+					"Civil Engineering: +1 <Production> Production",
+					"Flight: +1 <Tourism> Tourism from every bonus <Food> Food"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Japan",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/5/5d/Japanese_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Hojo Tokimune",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/0/07/Hojo_Tokimune_%28Civ6%29.png/",
+				"abilityName": "Divine Wind",
+				"ability": "Land units in Coastal tiles and naval units in Coast tiles receive +5 <Combat Strength> Combat Strength. +100% <Production> Production towards <Encampment> Encampments, <Holy Site> Holy Sites and <Theater Square> Theater Squares. Districts, improvements and units are immune to damage from Hurricanes. +100% damage from Hurricanes in Japanese territory to civilizations at war with Japan."
+			}
+		],
+		"abilityName": "Meiji Restoration",
+		"ability": "Districts recieve a +1 adjacency bonus for each adjacent district, instead of +0.5.",
+		"unit": [
+			{
+				"name": "Samurai",
+				"strength": "48",
+				"movement": "2",
+				"special": ["High <Combat Strength> Combat Strength", "Does not suffer combat penalties when damaged"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Electronics Factory",
+				"district": "Industrial Zone",
+				"effects": [
+					"+3 <Production> Production to all City Centers within 6 tiles of this <Industrial Zone> Industrial Zone",
+					"Electricity: +4 <Culture> Culture",
+					"+5 <Production> Production when powered",
+					"Base Load: 2 <Power> Power"
+				],
+				"replaces": "Factory"
+			}
+		]
+	},
+	{
+		"name": "Khmer",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/a/a0/Khmer_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Jayavarman VII",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/77/Jayavarman_VII_%28Civ6%29.png/",
+				"abilityName": "Monasteries of the King",
+				"ability": "<Holy Site> Holy Sites provide +2 <Food> Food and +1 <Housing> Housing if adjacent to a river. Building a <Holy Site> Holy Site triggers a Culture Bomb, claiming surrounding tiles."
+			}
+		],
+		"abilityName": "Grand Barays",
+		"ability": "Cities with an <Aqueduct> Aqueduct gain +3 <Faith> Faith and +1 <Amenity> Amenity. Farms receive +2 <Food> Food if adjacent to an <Aqueduct> Aqueduct.",
+		"unit": [
+			{
+				"name": "Domrey",
+				"strength": "Combat Strength: 33, Bombardment Strength: 45",
+				"movement": "2",
+				"special": ["2 <Range> Range", "Can move and attack in the same turn", "Exerts Zone of Control"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Prasat",
+				"district": "Holy Site",
+				"effects": ["+4 <Faith> Faith", "+2 <Relic> Relic Slots"],
+				"replaces": "Temple"
+			}
+		]
+	},
+	{
+		"name": "Kongo",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/d/d6/Kongolese_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Mvemba a Nzinga",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/6/68/Mvemba_a_Nzinga_%28Civ6%29.png/",
+				"abilityName": "Religious Convert",
+				"ability": "Can't build <Holy Site> Holy Sites or found a religion, but receives all the beliefs of any religion that has established itself as Kongo's majority religion, not just the Follower beliefs. Building a <Neighborhood> Mbanza or <Theater Square> Theater Square grants a free Apostle of the city's majority religion."
+			}
+		],
+		"abilityName": "Nkisi",
+		"ability": "<Relic> Relics, <Artifact> Artifacts and <Sculpture> Sculptures provide +2 <Food> Food, +2 <Production> Production, and +4 <Gold> Gold. The Palace has four extra slots for Great Works. Receive +50% <Great Writer> Great Writer Points, <Great Artist> Great Artist Points, <Great Musician> Great Musician Points, and <Great Merchant> Great Merchant Points from all sources.",
+		"unit": [
+			{
+				"name": "Ngao Mbeba",
+				"strength": "36",
+				"movement": "2",
+				"special": [
+					"Ony requires 5 <Iron> Iron to train",
+					"Ignores movement and sight penalties in Woods and Rainforest",
+					"+10 <Combat Strength> Combat Strength when defending against Ranged attacks",
+					"Higher <Production> Production Cost (110 vs.90)"
+				],
+				"replaces": "Swordsman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Mbanza",
+				"district": null,
+				"effects": ["+5 <Housing> Housing", "Earlier (Guilds vs. Urbanization)", "+2 <Food> Food", "+4 <Gold> Gold"],
+				"replaces": "Neighborhood"
+			}
+		]
+	},
+	{
+		"name": "Korea",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/f/ff/Korean_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Seondeok",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/9/9c/Seondeok_%28Civ6%29.png/",
+				"abilityName": "Hwarang",
+				"ability": "Cities with an established Governor receive +3% <Culture> Culture and +3% <Science> Science for each promotion that Governor has."
+			}
+		],
+		"abilityName": "Three Kingdoms",
+		"ability": "Farms receive +1 <Food> Food and Mines receive +1 <Science> Science if adjacent to a <Campus> Seowon.",
+		"unit": [
+			{
+				"name": "Hwacha",
+				"strength": "Combat Strength: 45 vs. 50, Ranged Strength: 60",
+				"movement": "2",
+				"special": ["2 <Range> Range", "Cannot move and attack in same turn", "Lower <Production> Production cost (250 vs. 300)"],
+				"replaces": "Field Cannon"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Seowon",
+				"district": null,
+				"effects": [
+					"Default +4 <Science> Science",
+					"-1 <Science> Science for each adjacent district tile",
+					"+1 <Science> Science for <Government Plaza> Government Plaza"
+				],
+				"replaces": "Campus"
+			}
+		]
+	},
+	{
+		"name": "Macedon",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/c/ca/Macedonian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Alexander",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/3/33/Alexander_%28Civ6%29.png/",
+				"abilityName": "To the World's End",
+				"ability": "Macedonian cities never incur war weariness. All military units heal completely when a city with a Wonder is captured. Gain the Hetairoi unique unit with Horseback Riding."
+			}
+		],
+		"abilityName": "Hellenistic Fusion",
+		"ability": "Conquering a city grants a free <Eureka> Eureka for each <Encampment> Encampment and <Campus> Campus district in the conquered city and a free <Inspiration> Inspiration for each <Holy Site> Holy Site and <Theater Square> Theater Square district.",
+		"unit": [
+			{
+				"name": "Hypaspist",
+				"strength": "36",
+				"movement": "2",
+				"special": [
+					"Requires 5 <Iron> Iron to train",
+					"+5 <Combat Strength> Combat Strength when besieging a district",
+					"+50% Support Bonuses",
+					"Higher <Production> Production cost (100 vs. 90)"
+				],
+				"replaces": "Swordsman"
+			},
+			{
+				"name": "Hetairoi",
+				"strength": "36",
+				"movement": "4",
+				"special": [
+					"+5 Additional <Combat Strength> Combat Strength when adjacent to a Great General",
+					"+5 <Great General> Great General Points from kills",
+					"Starts with a free promotion",
+					"Higher <Production> Production cost (100 vs. 80)"
+				],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Basilikoi Paides",
+				"district": "Encampment",
+				"effects": [
+					"+25% Combat Experience for all melee, ranged, anti-cavalry, and Hetairoi trained in this city",
+					"Gain <Science> Science equal to 25% of the unit's cost when a non-civilian unit is produced in this city"
+				],
+				"replaces": "Barracks"
+			}
+		]
+	},
+	{
+		"name": "Mali",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/1/12/Mali_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Mansa Musa",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/70/Mansa_Musa_%28Civ6%29.png/",
+				"abilityName": "Sahel Merchants",
+				"ability": "International <Trade Route> Trade Routes gain +1 <Gold> Gold for every flat Desert tile in the sending city. Entering a Golden Age permanently grants +1 <Trade Route> Trade Route capacity."
+			}
+		],
+		"abilityName": "Songs of the Jeli",
+		"ability": "City Centers receive +1 <Faith> Faith and +1 <Food> Food for every adjacent Desert and Desert Hills tile. Mines receive -1 <Production> Production and +4 <Gold> Gold. May purchase <Commercial Hub> Commercial Hub buildings with <Faith> Faith. -30% <Production> Production towards buildings and units.",
+		"unit": [
+			{
+				"name": "Mandekalu Cavalry",
+				"strength": "49 vs. 48",
+				"movement": "4",
+				"special": [
+					"Prevents friendly <Trader> Traders within 4 tiles from being plundered as long as they are on land",
+					"Provides <Gold> Gold equal to the base <Combat Strength> Combat Strength of each defeated unit"
+				],
+				"replaces": "Knight"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Suguba",
+				"district": null,
+				"effects": [
+					"+2 <Gold> Gold for having an adjacent River, and <Holy Site> Holy Site",
+					"20% Discount on all <Gold> Gold or <Faith> Faith purchases in this city"
+				],
+				"replaces": "Commercial Hub"
+			}
+		]
+	},
+	{
+		"name": "Māori",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/0/01/M%C4%81ori_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Kupe",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/4/42/Kupe_%28Civ6%29.png/",
+				"abilityName": "Kupe's Voyage",
+				"ability": "Starts the game in the Ocean. +2 <Science> Science and +2 <Culture> Culture per turn before the first city is settled. Their first settled city receives a free Builder and +1 <Population> Population. The Palace grants +3 <Housing> Housing and +1 <Amenity> Amenity."
+			}
+		],
+		"abilityName": "Mana",
+		"ability": "Starts the game with Sailing and unlocked and the ability to enter Ocean tiles. Embarked units gain +5 <Combat Strength> Combat Strength and +2 <Movement> Movement. Unimproved Woods and Rainforest provide +1 <Production> Production, increased to +2 with Conservation. Fishing Boats provide +1 Food. Building a Fishing Boat triggers a Culture Bomb, claiming surrounding tiles. Resources cannot be harvested. <Great Writer> Great Writers cannot be earned.",
+		"unit": [
+			{
+				"name": "Toa",
+				"strength": "36",
+				"movement": "2",
+				"special": [
+					"Reduces the <Combat Strength> Combat Strength of adjacent enemy units by 5",
+					"Has 1 build charge",
+					"Can construct Pā",
+					"Higher <Production> Production cost (120 vs. 90)",
+					"No Maintainence cost",
+					"No Strategic Resource requirement"
+				],
+				"replaces": "Swordsman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Pā",
+				"district": null,
+				"effects": ["Must be built on Hill", "Acts as Fort", "Māori units occupying a Pā heal even if they have just moved or attacked"],
+				"replaces": null
+			},
+			{
+				"name": "Marae",
+				"district": "Theater Square",
+				"effects": [
+					"+1 <Culture> Culture and <Faith> Faith to all this city's tiles with a passable feature",
+					"Flight: +1 <Tourism> Tourism to all this city's tiles with a feature",
+					"No Maintainence cost",
+					"No Great Work slots"
+				],
+				"replaces": "Amphitheater"
+			}
+		]
+	},
+	{
+		"name": "Mapuche",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/e/ea/Mapuche_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Lautaro",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/e/e0/Lautaro_%28Civ6%29.png/",
+				"abilityName": "Swift Hawk",
+				"ability": "Defeating an enemy unit within the borders of an enemy city causes that city to lose 20 Loyalty. Pillaging a tile within the borders of an enemy city causes that city to lose 5 Loyalty."
+			}
+		],
+		"abilityName": "Toqui",
+		"ability": "All units trained in cities with an established Governor gain +25% combat experience. +10 <Combat Strength> Combat Strength bonus against civilizations that are in a Golden Age.",
+		"unit": [
+			{
+				"name": "Malón Raider",
+				"strength": "55",
+				"movement": "4",
+				"special": ["+5 <Combat Strength> Combat Strength within 4 tiles of friendly territory", "Pillaging costs only 1 movement"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Chemamull",
+				"district": null,
+				"effects": ["Must be built on a tile with an Appeal of Breathtaking (4+)", "Provides <Culture> Culture equal to 75% of its tile's Appeal"],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Mongolia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/6/6f/Mongolian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Genghis Khan",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/5/53/Genghis_Khan_%28Civ6%29.png/",
+				"abilityName": "Mongol Horde",
+				"ability": "All cavalry class units gain +3 <Combat Strength> Combat Strength and have a chance to capture defeated cavalry class enemy units."
+			}
+		],
+		"abilityName": "Örtöö",
+		"ability": "Sending a <Trade Route> Trade Route immediately creates a <Trading Post> Trading Post in the destination city, instead of when the <Trade Route> Trade Route is finished. Gains an extra level of <Diplomatic Visibility> Diplomatic Visibility with civilizations they have a <Trading Post> Trading Post with. Mongolian Units receive +6 <Combat Strength> Combat Strength for each level of <Diplomatic Visibility> Diplomatic Visibility they have over their opponents, instead of the usual +3.",
+		"unit": [
+			{
+				"name": "Keshig",
+				"strength": "Combat Strength: 30, Ranged Strength: 40",
+				"movement": "4",
+				"special": [
+					"2 <Range> Range",
+					"When in formation, shares its <Movement> Movement with all units in the formation",
+					"Note: As ranged cavalry units, Keshigs don't receive the +3 <Combat Strength> Combat Strength from the Mongol Horde ability, but also don't receive the -17 <Ranged Strength> Ranged Strength penalty from attacking districts/naval units"
+				],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Ordu",
+				"district": "Encampment",
+				"effects": ["+1 <Movement> Movement for all light and heavy cavalry units trained in this city"],
+				"replaces": "Stable"
+			}
+		]
+	},
+	{
+		"name": "Norway",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/2/28/Norwegian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Harald Hardrada",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/7/77/Harald_Hardrada_%28Civ6%29.png/",
+				"abilityName": "Thunderbolt of the North",
+				"ability": "+50% <Production> Production toward naval melee units. Naval melee units gain the ability to perform coastal raids. Gain the Viking Longship unique unit with Sailing. Pillaging and coastal raiding grant <Science> Science, in addition to <Gold> Gold, for Mines, and <Culture> Culture, in addition to <Faith> Faith, for Quarries, Pastures, Plantations, and Camps."
+			}
+		],
+		"abilityName": "Knarr",
+		"ability": "Norwegian units gain the ability to enter Ocean tiles with Shipbuilding, instead of Cartography, and pay no additional <Movement> Movement costs to embark or disembark. Naval melee units can heal in neutral territory.",
+		"unit": [
+			{
+				"name": "Berserker",
+				"strength": "40",
+				"movement": "2",
+				"special": [
+					"Uses 1 less <Movement> Movement to pillage tiles",
+					"Has 4 movement if starting in enemy territory",
+					"+10 <Combat Strength> Combat Strength when attacking and -5 <Combat Strength> Combat Strength when defending"
+				],
+				"replaces": null
+			},
+			{
+				"name": "Viking Longship",
+				"strength": "30 vs. 25",
+				"movement": "3",
+				"special": ["4 <Movement> Movement when in coastal waters"],
+				"replaces": "Galley"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Stave Church",
+				"district": "Holy Site",
+				"effects": [
+					"<Holy Site> Holy Site gets an additional +1 Adjacency bonus from Woods",
+					"+1 <Production> Production for every coastal resource worked by this city"
+				],
+				"replaces": "Temple"
+			}
+		]
+	},
+	{
+		"name": "Nubia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/1/10/Nubian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Amanitore",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/b/b8/Amanitore_%28Civ6%29.png/",
+				"abilityName": "Kandake of Meroë",
+				"ability": "+20% <Production> Production towards districts, increasing to +40% <Production> Production if there's a Nubian Pyramid adjacent to the City Center."
+			}
+		],
+		"abilityName": "Ta-Seti",
+		"ability": "+50% <Production> Production toward Ranged units. Ranged units gain +50% combat experience. +1 <Production> Production for Mines over strategic resources, and +2 <Gold> Gold for Mines over bonus and luxury resources.",
+		"unit": [
+			{
+				"name": "Pítati Archer",
+				"strength": "Combat Strength: 17 vs. 15, Ranged Strength: 30 vs. 25",
+				"movement": "3 vs. 2",
+				"special": ["Higher <Production> Production cost (70 vs. 60)"],
+				"replaces": "Archer"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Nubian Pyramid",
+				"district": null,
+				"effects": [
+					"+1 <Faith> Faith",
+					"+1 <Food> Food if adjacent to a City Center",
+					"+1 <Science> Science if adjacent to a <Campus> Campus",
+					"+1 <Gold> Gold if adjacent to a <Commercial Hub> Commercial Hub",
+					"+1 <Gold> Gold if adjacent to a <Harbor> Harbor",
+					"+1 <Faith> Faith if adjacent to a <Holy Site> Holy Site",
+					"+1 <Production> Production if adjacent to an <Industrial Zone> Industrial Zone",
+					"+1 <Culture> Culture if adjacent to a <Theater Square> Theater Square"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Ottomans",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/7/7d/Ottoman_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Suleiman",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/8/85/Suleiman_%28Civ6%29.png/",
+				"abilityName": "Grand Vizier",
+				"ability": "Has access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder."
+			}
+		],
+		"abilityName": "Great Turkish Bombard",
+		"ability": "+50% <Production> Production toward Siege units. Siege units gain +5 <Bombard Strength> Bombard Strength when attacking defensible districts. Conquering a city doesn't cause that city to lose <Population> Population. +1 <Amenity> Amenity and +4 Loyalty per turn for cities not founded by the Ottomans.",
+		"unit": [
+			{
+				"name": "Barbary Corsair",
+				"strength": "Combat Strength: 40, Ranged Strength: 50",
+				"movement": "4",
+				"special": ["Uses no movement to perform Coastal Raids", "Lower <Production> Production cost (240 vs. 280)", "Lower maintainence cost (3 vs. 4)"],
+				"replaces": "Privateer"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Grand Bazaar",
+				"district": "Commercial Hub",
+				"effects": [
+					"Lower <Production> Production cost (220 vs. 290)",
+					"Accumulate one extra Strategic resource of each type of strategic resource this city has improved",
+					"+1 <Amenity> Amenity for each luxury resource this city has improved"
+				],
+				"replaces": "Bank"
+			}
+		]
+	},
+	{
+		"name": "Persia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/c/cf/Persian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Cyrus",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/1/14/Cyrus_%28Civ6%29.png/",
+				"abilityName": "Fall of Babylon",
+				"ability": "+2 <Movement> Movement for all units for the next 10 turns after declaring a Surprise War. Occupied cities have no penalties to their yields. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and Grievances."
+			}
+		],
+		"abilityName": "Satrapies",
+		"ability": "Gains +1 <Trade Route> Trade Route capacity with Political Philosophy. Domestic Trade Routes provide +2 <Gold> Gold and +1 <Culture> Culture. Roads built inside Persian territory are one level more advanced than usual.",
+		"unit": [
+			{
+				"name": "Immortal",
+				"strength": "Combat Strength: 30 vs. 36, Ranged Strength: 25 vs. 0",
+				"movement": "2",
+				"special": [
+					"Has Ranged attack (25 <Ranged Strength> Ranged Strength, 2 <Range> Range)",
+					"Higher <Production> Production cost (100 vs. 90)",
+					"Lower <Combat Strength> Combat Strength (30 vs. 36)"
+				],
+				"replaces": "Swordsman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Pairidaeza",
+				"district": null,
+				"effects": [
+					"+1 <Culture> Culture",
+					"+2 <Gold> Gold",
+					"+2 Appeal",
+					"+1 <Culture> Culture for every adjacent <Holy Site> Holy Site and <Theater Square> Theater Square",
+					"+1 <Gold> Gold for every adjacent <Commercial Hub> Commercial Hub and City Center",
+					"Diplomatic Service: +1 <Culture> Culture"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Phonecia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/1/1d/Phoenician_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Dido",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/c/cb/Dido_%28Civ6%29.png/",
+				"abilityName": "Founder of Carthage",
+				"ability": "Cities with a Cothon gain the unique Move Capital project, which moves the Phoenician capital to that city. Gains +1 <Trade Route> Trade Route capacity after building the <Government Plaza> Government Plaza or any <Government Plaza> Government Plaza building. +50% <Production> Production towards districts in the city with the <Government Plaza> Government Plaza."
+			}
+		],
+		"abilityName": "Mediterranean Colonies",
+		"ability": "Starts with the <Eureka> Eureka for Writing. Coastal cities founded by Phoenicia and in the same continent as their Capital always have full Loyalty. Settlers receive +2 <Movement> Movement and sight radius while embarked, and pay no <Movement> Movement costs to embark or disembark.",
+		"unit": [
+			{
+				"name": "Bireme",
+				"strength": "30 vs. 25",
+				"movement": "4",
+				"special": [
+					"Higher <Combat Strength> Combat Strength (30 vs. 25), higher <Movement> Movement (4 vs. 3)",
+					"Prevents friendly <Trader> Traders within 4 tiles from being being plundered"
+				],
+				"replaces": "Galley"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Cothon",
+				"district": null,
+				"effects": [
+					"+50% <Production> Production towards naval units and Settlers in this city",
+					"All wounded naval units in this city's borders heal +100 HP each turn",
+					"Allows for sea lane trade routes even if district is still under construction"
+				],
+				"replaces": "Harbor"
+			}
+		]
+	},
+	{
+		"name": "Poland",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/2/29/Polish_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Jadwiga",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/f/f6/Jadwiga_%28Civ6%29.png/",
+				"abilityName": "Lithuanian Union",
+				"ability": "Taking territory from a foreign city with a Culture Bomb converts it to Poland's religion. Relics provide +4 <Gold> Gold, +2 <Culture> Culture and +2 <Faith> Faith. <Holy Site> Holy Sites receive a +1 adjacency bonus from districts, instead of +0.5."
+			}
+		],
+		"abilityName": "Golden Liberty",
+		"ability": "Building an <Encampment> Encampment or Fort triggers a Culture Bomb, claiming surrounding tiles. One Military policy slot in all governments is converted into a Wildcard policy slot.",
+		"unit": [
+			{
+				"name": "Winged Hussar",
+				"strength": "55",
+				"movement": "4",
+				"special": ["Pushes back enemies if it does more damage than it takes when attacking. Defenders that cannot be pushed back take additional damage"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Sukiennice",
+				"district": "Commercial Hub",
+				"effects": ["+4 <Gold> Gold from domestic <Trade Route> Trade Routes", "+2 <Production> Production from international <Trade Route> Trade Routes"],
+				"replaces": "Market"
+			}
+		]
+	},
+	{
+		"name": "Rome",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/f/f6/Roman_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Trajan",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/d/d5/Trajan_%28Civ6%29.png/",
+				"abilityName": "Trajan's Column",
+				"ability": "All founded cities start with a free building in the City Center. (A Monument if the game is started in the Ancient Era)"
+			}
+		],
+		"abilityName": "All Roads Lead to Rome",
+		"ability": "Founded or conquered cities start with a <Trading Post> Trading Post and, if within <Trade Route> Trade Route range of the Capital, a road to it. <Trade Route> Trade Routes generate +1 additional <Gold> Gold from Roman <Trading Post> Trading Posts they pass through.",
+		"unit": [
+			{
+				"name": "Legion",
+				"strength": "40 vs. 36",
+				"movement": "2",
+				"special": [
+					"1 Build Charge (Lost when upgraded to Musketman)",
+					"Can construct Roman Fort with Build Charge",
+					"Can clear terrain with Build Charge",
+					"Higher <Production> Production cost (110 vs. 90)"
+				],
+				"replaces": "Swordsman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Bath",
+				"district": null,
+				"effects": [
+					"Provides +2 <Housing> Housing and +1 <Amenity> Amenity, in addition to the normal bonuses of an <Aqueduct> Aqueduct",
+					"+1 <Amenity> Amenity if adjacent to a Geothermal Fissure"
+				],
+				"replaces": "Aqueduct"
+			}
+		]
+	},
+	{
+		"name": "Russia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/0/0a/Russian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Peter the Great",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/8/80/Peter_%28Civ6%29.png/",
+				"abilityName": "The Grand Embassy",
+				"ability": "<Trade Route> Trade Routes to more advanced civilizations grant Russia +1 <Science> Science for every three technologies that civilization is ahead of them, and +1 <Culture> Culture for every three civics."
+			}
+		],
+		"abilityName": "Mother Russia",
+		"ability": "Founded cities start with eight additional tiles. Tundra tiles provide +1 <Faith> Faith and +1 <Production> Production, in addition to their usual yields. Units are immune to Blizzards. Units of civilizations who are at war with Russia take 100% extra damage from Blizzards while in Russian territory.",
+		"unit": [
+			{
+				"name": "Cossack",
+				"strength": "67 vs. 62",
+				"movement": "5",
+				"special": ["+5 <Combat Strength> Combat Strength when fighting in or next to home territory", "Can move after attacking"],
+				"replaces": "Cavalry"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Lavra",
+				"district": null,
+				"effects": [
+					"+2 <Great Prophet> Great Prophet Points per turn",
+					"+1 <Great Writer> Great Writer Points, <Great Artist> Great Artist Points, <Great Musician> Great Musician Points (unaffected by Oracle)",
+					"Expands city borders whenever a Great Person is used in this city"
+				],
+				"replaces": "Holy Site"
+			}
+		]
+	},
+	{
+		"name": "Scotland",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/9/9f/Scottish_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Robert the Bruce",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/c/c4/Robert_the_Bruce_%28Civ6%29.png/",
+				"abilityName": "Bannockburn",
+				"ability": "Can declare a War of Liberation with Defensive Tactics, instead of Diplomatic Service. +100% <Production> Production in all cities and +2 <Movement> Movement for all units for the next 10 turns after declaring a War of Liberation."
+			}
+		],
+		"abilityName": "Scottish Enlightenment",
+		"ability": "Happy cities gain +5% <Science> Science and +5% <Production> Production, and generate +1 <Great Scientist> Great Scientist Points in their <Campus> Campuses and +1 <Great Engineer> Great Engineer Points in their <Industrial Zone> Industrial Zones. Ecstatic cities double these bonuses.",
+		"unit": [
+			{
+				"name": "Highlander",
+				"strength": "Combat Strength: 50 vs. 45, Ranged Strength: 65 vs. 60",
+				"movement": "3",
+				"special": ["+5 <Combat Strength> Combat Strength in Hills and Woods"],
+				"replaces": "Ranger"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Golf Course",
+				"district": null,
+				"effects": [
+					"+1 <Amenity> Amenity",
+					"+2 <Gold> Gold",
+					"+1 Appeal",
+					"+1 <Culture> Culture if adjacency to a City Center",
+					"+1 <Culture> Culture if adjacent to an <Entertainment Complex> Entertainment Complex",
+					"Globalization: +1 <Housing> Housing",
+					"Limit of 1 per city",
+					"Tiles with Golf Courses cannot be swapped"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Scythia",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/4/4d/Scythian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Tomyris",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/6/6a/Tomyris_%28Civ6%29.png/",
+				"abilityName": "Killer of Cyrus",
+				"ability": "Can declare a War of Liberation with Defensive Tactics, instead of Diplomatic Service. +100% <Production> Production in all cities and +2 <Movement> Movement for all units for the next 10 turns after declaring a War of Liberation."
+			}
+		],
+		"abilityName": "People of the Steppe",
+		"ability": "Building a light cavalry unit or Saka Horse Archer grants a free second copy of that unit.",
+		"unit": [
+			{
+				"name": "Saka Horse Archer",
+				"strength": "Combat Strength: 15, Ranged Strength: 25",
+				"movement": "4",
+				"special": ["1 <Range> Range", "No Strategic Resource requirement"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Kurgan",
+				"district": null,
+				"effects": ["+1 <Faith> Faith", "+1 <Gold> Gold", "+1 <Faith> Faith for each adjacent Pasture"],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Spain",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/8/80/Spanish_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Phillip II",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/5/59/Philip_II_%28Civ6%29.png/",
+				"abilityName": "El Escorial",
+				"ability": "All units receive +4 <Combat Strength> Combat Strength against civilizations following a different Religion. Inquisitors have one extra use of their Remove Heresy ability. Inquisitors eliminate 100% of the presence of other Religions."
+			}
+		],
+		"abilityName": "Treasure Fleet",
+		"ability": "+2 Loyalty per turn for cities outside their home continent if they have a Mission adjacent to the City Center.",
+		"unit": [
+			{
+				"name": "Conquistador",
+				"strength": "55",
+				"movement": "2",
+				"special": ["+10 <Combat Strength> Combat Strength when same tile with a religious unit"],
+				"replaces": "Musketman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Mission",
+				"district": null,
+				"effects": [
+					"+2 <Faith> Faith",
+					"+2 <Faith> Faith if on a continent different from your Capital",
+					"+2 <Science> Science if built next to a <Campus> Campus",
+					"Cultural Heritage: +2 <Science> Science"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Sumeria",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/3/3f/Sumerian_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Gilgamesh",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/f/ff/Gilgamesh_%28Civ6%29.png/",
+				"abilityName": "Adventures of Enkidu",
+				"ability": "May declare war on anyone at war with his allies without incurring warmonger penalties. When at war with a common foe, Sumerian and allied units share pillage rewards and combat experience if within 5 tiles of each other. Gains Alliance Points per turn for being at war with a common foe."
+			}
+		],
+		"abilityName": "Epic Quest",
+		"ability": "Capturing a Barbarian Outpost also grants a Tribal Village reward. May levy city-state units at 50% of the usual <Gold> Gold cost.",
+		"unit": [
+			{
+				"name": "War-Cart",
+				"strength": "30",
+				"movement": "3",
+				"special": ["No combat penalties against anti-cavalry units", "+1 <Movement> Movement if starting in open terrain", "Ignores enemy Zone of Control"],
+				"replaces": null
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Ziggurat",
+				"district": null,
+				"effects": ["+2 <Science> Science", "+1 <Culture> Culture if adjacent to a River", "Natural History: +1 <Culture> Culture"],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Sweden",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/0/03/Swedish_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Kristina",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/3/32/Kristina_%28Civ6%29.png/",
+				"abilityName": "Minerva of the North",
+				"ability": "Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all slots are filled. Gains the Queen's Bibliotheque unique building in the <Government Plaza> Government Plaza."
+			}
+		],
+		"abilityName": "Nobel Prize",
+		"ability": "Gains 50 <Diplomatic Favor> Diplomatic Favor whenever a Great Person is earned. +1 <Great Engineer> Great Engineer Points from Factories and +1 <Great Scientist> Great Scientist Points from Universities. Sweden's presence in the game adds three unique World Congress competitions in the Industrial Era.",
+		"unit": [
+			{
+				"name": "Carolean",
+				"strength": "55",
+				"movement": "3",
+				"special": [
+					"+10 <Combat Strength> Combat Strength per point of unused <Movement> Movement",
+					"Higher <Movement> Movement (3 vs. 2)",
+					"Lower <Gold> Gold maintainence cost (3 vs. 4)"
+				],
+				"replaces": "Pike and Shot"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Open-Air Museum",
+				"district": null,
+				"effects": [
+					"+2 Loyalty to this city",
+					"+2 <Culture> Culture and +2 <Tourism> Tourism for each different type of terrain in which at least one Swedish city is founded",
+					"Limit of 1 per city",
+					"Tiles with Open-Air Museums cannot be swapped"
+				],
+				"replaces": null
+			}
+		]
+	},
+	{
+		"name": "Zulu",
+		"icon": "https://vignette.wikia.nocookie.net/civilization/images/0/06/Zulu_%28Civ6%29.png/",
+		"leader": [
+			{
+				"name": "Shaka",
+				"portrait": "https://vignette.wikia.nocookie.net/civilization/images/e/eb/Shaka_%28Civ6%29.png/",
+				"abilityName": "Amabutho",
+				"ability": "May form Corps with Mercenaries, instead of Nationalism, and Armies with Nationalism, instead of Mobilization. Corps and Armies gain an additional + <Combat Strength> Combat Strength."
+			}
+		],
+		"abilityName": "Isibongo",
+		"ability": "Capturing a city will upgrade the conquering unit into a Corps or Army, if the necessary civics are unlocked. +3 Loyalty per turn to cities with a garrisoned unit, increasing to +5 if the garrisoned unit is a Corps or Army.",
+		"unit": [
+			{
+				"name": "Impi",
+				"strength": "41",
+				"movement": "2",
+				"special": ["Lower <Production> Production cost (125 vs. 200)", "Lower maintainence cost (1 vs. 3)", "Increased flanking bonus", "Gains XP faster"],
+				"replaces": "Pikeman"
+			}
+		],
+		"infrastructure": [
+			{
+				"name": "Ikanda",
+				"district": null,
+				"effects": ["25% faster training of Corps and Armies", "Allows Corps and Armies to be built without the Miilitary Academy building"],
+				"replaces": "Encampment"
+			}
+		]
+	}
+]
