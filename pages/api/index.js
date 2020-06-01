@@ -11,7 +11,11 @@ export default async (req, res) => {
 		if (req.query.civ) {
 			res.status(200).json(await db.collection('civs').findOne({ name: req.query.civ }));
 		} else {
-			res.status(200).json((await db.collection('civs').find({}).toArray()).map((civ) => ({ name: civ.name, icon: civ.icon })));
+			res.status(200).json(
+				(await db.collection('civs').find({}).toArray())
+					.map((civ) => ({ name: civ.name, icon: civ.icon }))
+					.sort((civ1, civ2) => civ1.name.localeCompare(civ2.name))
+			);
 		}
 	} catch (err) {
 		console.log(err);
