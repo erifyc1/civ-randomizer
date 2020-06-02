@@ -19,7 +19,7 @@ const urls = {
 	range: 'https://vignette.wikia.nocookie.net/civilization/images/9/9e/Civ6Range.png/',
 	trader: 'https://vignette.wikia.nocookie.net/civilization/images/0/0f/TradeRoute6.png/',
 	'trade route': 'https://vignette.wikia.nocookie.net/civilization/images/0/0f/TradeRoute6.png/',
-	visibility: 'https://vignette.wikia.nocookie.net/civilization/images/c/ce/DiplomaticVisibility6.png/',
+	'diplomatic visibility': 'https://vignette.wikia.nocookie.net/civilization/images/c/ce/DiplomaticVisibility6.png/',
 	'trading post': 'https://vignette.wikia.nocookie.net/civilization/images/7/72/Trading_Post_%28Civ6%29.png/',
 	population: 'https://vignette.wikia.nocookie.net/civilization/images/f/f8/Citizen6.png/',
 	relic: 'https://vignette.wikia.nocookie.net/civilization/images/c/c5/Relic6.png/',

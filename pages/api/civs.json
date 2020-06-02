@@ -631,11 +631,11 @@
 		"infrastructure": [
 			{
 				"name": "Thermal Bath",
-				"district": "Entertainment District",
+				"district": "Entertainment Complex",
 				"effects": [
 					"+2 <Amenity> Amenities from Entertainment (vs. 1)",
 					"+2 <Production> Production to all City Centers within 6 tiles",
-					"+3 <Tourism> Tourism, +2 <Amenitie> Amenities to this city if there is at least 1 Geothermal Fissure within its borders"
+					"+3 <Tourism> Tourism, +2 <Amenities> Amenities to this city if there is at least 1 Geothermal Fissure within its borders"
 				],
 				"replaces": "Zoo"
 			}
