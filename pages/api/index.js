@@ -2,9 +2,7 @@ import { MongoClient } from 'mongodb';
 
 export default async (req, res) => {
 	try {
-		const client = await MongoClient.connect('mongodb+srv://user:admin@cluster0-o6jvs.mongodb.net/test?retryWrites=true&w=majority', {
-			useUnifiedTopology: true
-		});
+		const client = await MongoClient.connect(process.env.MONGODB_URL);
 		const db = client.db('civ');
 
 		res.setHeader('Access-Control-Allow-Origin', '*');
