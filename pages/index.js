@@ -1,53 +1,22 @@
 import axios from 'axios';
 import Head from 'next/head';
 import React, { useEffect, useReducer, useState } from 'react';
-import CivCard from '../components/CivCard';
-import CivList from '../components/CivList';
+import LeaderCard from '../components/LeaderCard';
+import LeaderList from '../components/LeaderList';
 import { GlobalContext } from './_app';
 
-const reducer = (prevState, action) => {
+const reducer = (prevLeaders, action) => {
 	switch (action.type) {
-		case 'ADD_CIV':
-			return [...prevState, action.civ];
-		case 'REMOVE_CIV':
-			return prevState.filter((civ) => civ !== action.civ);
+		case 'ADD_LEADER':
+			return [...prevLeaders, action.leader];
+		case 'REMOVE_LEADER':
+			return prevLeaders.filter((leader) => leader !== action.leader);
 		default:
-			return prevState;
+			return prevLeaders;
 	}
 };
 
-const bgCivs = [
-	'America',
-	'Arabia',
-	'Australia',
-	'Aztec',
-	'Brazil',
-	'China',
-	'Egypt',
-	'England',
-	'France',
-	'Germany',
-	'Greece',
-	'India',
-	'Indonesia',
-	'Japan',
-	'Khmer',
-	'Kongo',
-	'Macedon',
-	'Norway',
-	'Nubia',
-	'Persia',
-	'Poland',
-	'Rome',
-	'Russia',
-	'Scythia',
-	'Spain',
-	'Sumeria'
-];
-const rnfCivs = ['Cree', 'Netherlands', 'Georgia', 'Korea', 'Mapuche', 'Mongolia', 'Scotland', 'Zulu'];
-const gsCivs = ['Canada', 'Hungary', 'Inca', 'Mali', 'Māori', 'Ottomans', 'Phonecia', 'Sweden'];
-
-const bgLeaders = [
+const BASE_GAME_LEADERS = [
 	'Alexander',
 	'Amanitore',
 	'Catherine de Medici (Black Queen)',
@@ -77,18 +46,9 @@ const bgLeaders = [
 	'Victoria'
 ];
 
-const rnfLeaders = [
-	'Chandragupta',
-	'Genghis Khan',
-	'Poundmaker',
-	'Robert the Bruce',
-	'Seondeok',
-	'Shaka',
-	'Tamar',
-	'Wilhelmina'
-];
+const RISE_AND_FALL_LEADERS = ['Chandragupta', 'Genghis Khan', 'Poundmaker', 'Robert the Bruce', 'Seondeok', 'Shaka', 'Tamar', 'Wilhelmina'];
 
-const gsLeaders = [
+const GATHERING_STORM_LEADERS = [
 	'Dido',
 	'Eleanor of Aquitaine (English)',
 	'Eleanor of Aquitaine (French)',
@@ -101,7 +61,7 @@ const gsLeaders = [
 	'Wilfrid Laurier'
 ];
 
-const nfLeaders = [
+const NEW_FRONTIER_PASS_LEADERS = [
 	'Ambiorix',
 	'Bà Triệu',
 	'Basil II',
@@ -116,24 +76,23 @@ const nfLeaders = [
 	'Teddy Roosevelt (Rough Rider)'
 ];
 
-
-
 const Index = () => {
-	const [disabledCivs, dispatchCiv] = useReducer(reducer, []);
-	const [civs, setCivs] = useState([]);
-	const [selectedCiv, setSelectedCiv] = useState(null);
-	const [bg, setBg] = useState(true);
-	const [rnf, setRnf] = useState(true);
-	const [gs, setGs] = useState(true);
+	const [disabledLeaders, dispatchLeader] = useReducer(reducer, []);
+	const [leaders, setLeaders] = useState([]);
+	const [selectedLeader, setSelectedLeader] = useState(null);
+	const [baseGameEnabled, setBaseGameEnabled] = useState(true);
+	const [riseAndFallEnabled, setRiseAndFallEnabled] = useState(true);
+	const [gatheringStormEnabled, setGatheringStormEnabled] = useState(true);
+	const [newFrontierEnabled, setNewFrontierEnabled] = useState(true);
 
 	useEffect(() => {
 		axios('/api').then((res) => {
-			setCivs(res.data);
+			setLeaders(res.data);
 		});
 	}, []);
 
 	return (
-		<GlobalContext.Provider value={{ dispatchCiv, disabledCivs }}>
+		<GlobalContext.Provider value={{ dispatchLeader, disabledLeaders }}>
 			<h1>Civ Randomizer</h1>
 			<Head>
 				<title>Civ Randomizer</title>
@@ -141,16 +100,15 @@ const Index = () => {
 			<button
 				id="randomize-button"
 				onClick={() => {
-					const availableCivs = civs.filter((civ) => !disabledCivs.includes(civ.name));
-					if (availableCivs.length !== 0) {
-						const idx = Math.floor(availableCivs.length * Math.random());
-						axios(`/api?civ=${availableCivs[idx].name}`).then((res) => {
-							const civ = res.data;
-							civ.leader = civ.leader[Math.floor(Math.random() * civ.leader.length)];
-							setSelectedCiv(civ);
-							dispatchCiv({
-								type: 'ADD_CIV',
-								civ: civ.name
+					const availableLeaders = leaders.filter((leader) => !disabledLeaders.includes(leader));
+					if (availableLeaders.length !== 0) {
+						const idx = Math.floor(availableLeaders.length * Math.random());
+						axios(`/api?leader=${availableLeaders[idx].name}`).then((res) => {
+							const leader = res.data;
+							setSelectedLeader(leader);
+							dispatchLeader({
+								type: 'ADD_LEADER',
+								leader: leader.name
 							});
 						});
 					}
@@ -159,46 +117,61 @@ const Index = () => {
 			</button>
 			<div id="toolbar">
 				<span>
-					<img
-						src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/46/9b/df/469bdfbc-8c91-9c6f-5782-21cf38850a94/App.png/1200x630bb.png"
-						alt="Base Game Civs"
-					/>
-					<label className={bg ? 'checked' : ''}>
+					<img src="/images/icon/general/BG.png" alt="Base Game Civs" />
+					<label className={baseGameEnabled ? 'checked' : ''}>
 						<input
 							type="checkbox"
 							onChange={() => {
-								setBg(!bg);
-								bgCivs.forEach((civ) => dispatchCiv({ type: bg ? 'ADD_CIV' : 'REMOVE_CIV', civ }));
+								setBaseGameEnabled(!baseGameEnabled);
+								BASE_GAME_LEADERS.forEach((leader) => dispatchLeader({ type: baseGameEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
 							}}
-							checked={bg}
+							checked={baseGameEnabled}
 						/>
 						<span></span>
 					</label>
 				</span>
 				<span>
-					<img src="https://vignette.wikia.nocookie.net/civilization/images/d/d0/R%26F-Only.png/" alt="Rise &amp; Fall Civs" />
-					<label className={rnf ? 'checked' : ''}>
+					<img src="/images/icon/general/R&F.png" alt="Rise &amp; Fall Civs" />
+					<label className={riseAndFallEnabled ? 'checked' : ''}>
 						<input
 							type="checkbox"
 							onChange={() => {
-								setRnf(!rnf);
-								rnfCivs.forEach((civ) => dispatchCiv({ type: rnf ? 'ADD_CIV' : 'REMOVE_CIV', civ }));
+								setRiseAndFallEnabled(!riseAndFallEnabled);
+								RISE_AND_FALL_LEADERS.forEach((leader) => dispatchLeader({ type: riseAndFallEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
 							}}
-							checked={rnf}
+							checked={riseAndFallEnabled}
 						/>
 						<span></span>
 					</label>
 				</span>
 				<span>
-					<img src="https://vignette.wikia.nocookie.net/civilization/images/9/96/GS-Only.png/" alt="Gathering Storm Civs" />
-					<label className={gs ? 'checked' : ''}>
+					<img src="/images/icon/general/GS.png" alt="Gathering Storm Civs" />
+					<label className={gatheringStormEnabled ? 'checked' : ''}>
 						<input
 							type="checkbox"
 							onChange={() => {
-								setGs(!gs);
-								gsCivs.forEach((civ) => dispatchCiv({ type: gs ? 'ADD_CIV' : 'REMOVE_CIV', civ }));
+								setGatheringStormEnabled(!gatheringStormEnabled);
+								GATHERING_STORM_LEADERS.forEach((leader) =>
+									dispatchLeader({ type: gatheringStormEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader })
+								);
 							}}
-							checked={gs}
+							checked={gatheringStormEnabled}
+						/>
+						<span></span>
+					</label>
+				</span>
+				<span>
+					<img src="/images/icon/general/NF.png" alt="New Frontier Pass Civs" />
+					<label className={newFrontierEnabled ? 'checked' : ''}>
+						<input
+							type="checkbox"
+							onChange={() => {
+								setNewFrontierEnabled(!newFrontierEnabled);
+								NEW_FRONTIER_PASS_LEADERS.forEach((leader) =>
+									dispatchLeader({ type: newFrontierEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader })
+								);
+							}}
+							checked={newFrontierEnabled}
 						/>
 						<span></span>
 					</label>
@@ -209,9 +182,9 @@ const Index = () => {
 					<div id="civ-list-title">
 						<h2>Civ List</h2>
 					</div>
-					<CivList civs={civs} />
+					<LeaderList leaders={leaders} />
 				</div>
-				<div id="chosen-civ">{selectedCiv && <CivCard civ={selectedCiv} />}</div>
+				<div id="chosen-civ">{selectedLeader && <LeaderCard leader={selectedLeader} />}</div>
 			</div>
 		</GlobalContext.Provider>
 	);
