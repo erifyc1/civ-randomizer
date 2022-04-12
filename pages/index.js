@@ -16,37 +16,65 @@ const reducer = (prevLeaders, action) => {
 	}
 };
 
-const baseGameCivs = [
-	'America',
-	'Arabia',
-	'Australia',
-	'Aztec',
-	'Brazil',
-	'China',
-	'Egypt',
-	'England',
-	'France',
-	'Germany',
-	'Greece',
-	'India',
-	'Indonesia',
-	'Japan',
-	'Khmer',
-	'Kongo',
-	'Macedon',
-	'Norway',
-	'Nubia',
-	'Persia',
-	'Poland',
-	'Rome',
-	'Russia',
-	'Scythia',
-	'Spain',
-	'Sumeria'
+const BASE_GAME_LEADERS = [
+	'Alexander',
+	'Amanitore',
+	'Catherine de Medici (Black Queen)',
+	'Cleopatra',
+	'Cyrus',
+	'Frederick Barbarossa',
+	'Gandhi',
+	'Gilgamesh',
+	'Gitarja',
+	'Gorgo',
+	'Harald Hardrada',
+	'Hojo Tokimune',
+	'Jadwiga',
+	'Jayavarman VII',
+	'John Curtin',
+	'Montezuma',
+	'Mvemba a Nzinga',
+	'Pedro II',
+	'Pericles',
+	'Peter',
+	'Philip II',
+	'Qin Shi Huang',
+	'Saladin',
+	'Teddy Roosevelt (Bull Moose)',
+	'Tomyris',
+	'Trajan',
+	'Victoria'
 ];
-const riseAndFallCivs = ['Cree', 'Netherlands', 'Georgia', 'Korea', 'Mapuche', 'Mongolia', 'Scotland', 'Zulu'];
-const gatheringStormCivs = ['Canada', 'Hungary', 'Inca', 'Mali', 'Māori', 'Ottomans', 'Phonecia', 'Sweden'];
-const newFrontierCivs = ['Maya', 'Gran Colombia', 'Ethiopia', 'Byzantium', 'Gaul', 'Babylon', 'Vietnam', /*kublai khan*/ 'Portugal'];
+
+const RISE_AND_FALL_LEADERS = ['Chandragupta', 'Genghis Khan', 'Poundmaker', 'Robert the Bruce', 'Seondeok', 'Shaka', 'Tamar', 'Wilhelmina'];
+
+const GATHERING_STORM_LEADERS = [
+	'Dido',
+	'Eleanor of Aquitaine (English)',
+	'Eleanor of Aquitaine (French)',
+	'Kristina',
+	'Kupe',
+	'Mansa Musa',
+	'Matthias Corvinus',
+	'Pachacuti',
+	'Suleiman',
+	'Wilfrid Laurier'
+];
+
+const NEW_FRONTIER_PASS_LEADERS = [
+	'Ambiorix',
+	'Bà Triệu',
+	'Basil II',
+	'Catherine de Medici (Magnificence)',
+	'Hammurabi',
+	'João III',
+	'Kublai Khan (Chinese)',
+	'Kublai Khan (Mongolian)',
+	'Lady Six Sky',
+	'Menelik II',
+	'Simón Bolívar',
+	'Teddy Roosevelt (Rough Rider)'
+];
 
 const Index = () => {
 	const [disabledLeaders, dispatchLeader] = useReducer(reducer, []);
@@ -95,7 +123,7 @@ const Index = () => {
 							type="checkbox"
 							onChange={() => {
 								setBaseGameEnabled(!baseGameEnabled);
-								baseGameCivs.forEach((leader) => dispatchLeader({ type: baseGameEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
+								BASE_GAME_LEADERS.forEach((leader) => dispatchLeader({ type: baseGameEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
 							}}
 							checked={baseGameEnabled}
 						/>
@@ -109,7 +137,7 @@ const Index = () => {
 							type="checkbox"
 							onChange={() => {
 								setRiseAndFallEnabled(!riseAndFallEnabled);
-								riseAndFallCivs.forEach((leader) => dispatchLeader({ type: riseAndFallEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
+								RISE_AND_FALL_LEADERS.forEach((leader) => dispatchLeader({ type: riseAndFallEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
 							}}
 							checked={riseAndFallEnabled}
 						/>
@@ -123,7 +151,9 @@ const Index = () => {
 							type="checkbox"
 							onChange={() => {
 								setGatheringStormEnabled(!gatheringStormEnabled);
-								gatheringStormCivs.forEach((leader) => dispatchLeader({ type: gatheringStormEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
+								GATHERING_STORM_LEADERS.forEach((leader) =>
+									dispatchLeader({ type: gatheringStormEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader })
+								);
 							}}
 							checked={gatheringStormEnabled}
 						/>
@@ -137,7 +167,9 @@ const Index = () => {
 							type="checkbox"
 							onChange={() => {
 								setNewFrontierEnabled(!newFrontierEnabled);
-								newFrontierCivs.forEach((leader) => dispatchLeader({ type: newFrontierEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader }));
+								NEW_FRONTIER_PASS_LEADERS.forEach((leader) =>
+									dispatchLeader({ type: newFrontierEnabled ? 'ADD_LEADER' : 'REMOVE_LEADER', leader })
+								);
 							}}
 							checked={newFrontierEnabled}
 						/>
