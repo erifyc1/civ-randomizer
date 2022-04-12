@@ -27,6 +27,7 @@ const urls = {
 	envoy: '/images/icon/mechanic/Envoy.png',
 	power: '/images/icon/mechanic/Power.png',
 	sight: '/images/icon/mechanic/Sight.png',
+	'build charge': '/images/icon/mechanic/Build_Charge.png',
 
 	// combat
 	'combat strength': '/images/icon/combat/Combat_Strength.png',
