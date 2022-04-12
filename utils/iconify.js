@@ -28,6 +28,7 @@ const urls = {
 	power: '/images/icon/mechanic/Power.png',
 	sight: '/images/icon/mechanic/Sight.png',
 	'build charge': '/images/icon/mechanic/Build_Charge.png',
+	capital: '/images/icon/mechanic/Capital.png',
 
 	// combat
 	'combat strength': '/images/icon/combat/Combat_Strength.png',
@@ -84,7 +85,17 @@ const urls = {
 	neighborhood: '/images/icon/district/Neighborhood.png',
 	aerodrome: '/images/icon/district/Aerodrome.png',
 	spaceport: '/images/icon/district/Spaceport.png',
-	'government plaza': '/images/icon/district/Government_Plaza.png'
+	'government plaza': '/images/icon/district/Government_Plaza.png',
+
+	// tech
+
+	flight: '/images/icon/tech/Flight.png',
+
+	// policy
+	'military policy': '/images/icon/policy/Military_Policy.png',
+	'economic policy': '/images/icon/policy/Economic_Policy.png',
+	'diplomatic policy': '/images/icon/policy/Diplomatic_Policy.png',
+	'wildcard policy': '/images/icon/policy/Wildcard_Policy.png'
 };
 
 /**
