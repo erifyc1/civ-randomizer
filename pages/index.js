@@ -46,7 +46,77 @@ const bgCivs = [
 ];
 const rnfCivs = ['Cree', 'Netherlands', 'Georgia', 'Korea', 'Mapuche', 'Mongolia', 'Scotland', 'Zulu'];
 const gsCivs = ['Canada', 'Hungary', 'Inca', 'Mali', 'Māori', 'Ottomans', 'Phonecia', 'Sweden'];
-const nfCivs = ['Maya', 'Gran Colombia', 'Ethiopia', 'Byzantium', 'Gaul', 'Babylon', 'Vietnam', /*kublai khan*/ 'Portugal']
+
+const bgLeaders = [
+	'Alexander',
+	'Amanitore',
+	'Catherine de Medici (Black Queen)',
+	'Cleopatra',
+	'Cyrus',
+	'Frederick Barbarossa',
+	'Gandhi',
+	'Gilgamesh',
+	'Gitarja',
+	'Gorgo',
+	'Harald Hardrada',
+	'Hojo Tokimune',
+	'Jadwiga',
+	'Jayavarman VII',
+	'John Curtin',
+	'Montezuma',
+	'Mvemba a Nzinga',
+	'Pedro II',
+	'Pericles',
+	'Peter',
+	'Philip II',
+	'Qin Shi Huang',
+	'Saladin',
+	'Teddy Roosevelt (Bull Moose)',
+	'Tomyris',
+	'Trajan',
+	'Victoria'
+];
+
+const rnfLeaders = [
+	'Chandragupta',
+	'Genghis Khan',
+	'Poundmaker',
+	'Robert the Bruce',
+	'Seondeok',
+	'Shaka',
+	'Tamar',
+	'Wilhelmina'
+];
+
+const gsLeaders = [
+	'Dido',
+	'Eleanor of Aquitaine (English)',
+	'Eleanor of Aquitaine (French)',
+	'Kristina',
+	'Kupe',
+	'Mansa Musa',
+	'Matthias Corvinus',
+	'Pachacuti',
+	'Suleiman',
+	'Wilfrid Laurier'
+];
+
+const nfLeaders = [
+	'Ambiorix',
+	'Bà Triệu',
+	'Basil II',
+	'Catherine de Medici (Magnificence)',
+	'Hammurabi',
+	'João III',
+	'Kublai Khan (Chinese)',
+	'Kublai Khan (Mongolian)',
+	'Lady Six Sky',
+	'Menelik II',
+	'Simón Bolívar',
+	'Teddy Roosevelt (Rough Rider)'
+];
+
+
 
 const Index = () => {
 	const [disabledCivs, dispatchCiv] = useReducer(reducer, []);
