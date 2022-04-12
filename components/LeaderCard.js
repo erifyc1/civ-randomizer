@@ -38,16 +38,19 @@ const LeaderCard = (props) => {
 						{unit.name} {unit.replaces === null ? '(Unique Unit)' : `(Replaces ${unit.replaces})`}
 					</h3>
 					<span>
-						<h4>Strength:</h4> {iconify(unit.strength + ' <Combat Strength>')}
+						<h4>Strength:</h4> {iconify(unit.strength)}
 					</span>
 					<span>
-						<h4>Movement:</h4> {iconify(unit.movement + ' <Movement>')}
+						<h4>Movement:</h4> {iconify(unit.movement)}
 					</span>
 					{unit.ranged && (
 						<span>
-							<h4>Ranged:</h4> {iconify(unit.ranged + ' <Ranged Strength>')}
+							<h4>Ranged:</h4> {iconify(unit.ranged)}
 						</span>
 					)}
+					<span>
+						<h4>Production Cost:</h4> {iconify(unit.production)}
+					</span>
 					<ul>
 						{unit.special.map((special, i) => (
 							<li key={i}>{iconify(special)}</li>
