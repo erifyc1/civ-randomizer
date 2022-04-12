@@ -46,6 +46,7 @@ const bgCivs = [
 ];
 const rnfCivs = ['Cree', 'Netherlands', 'Georgia', 'Korea', 'Mapuche', 'Mongolia', 'Scotland', 'Zulu'];
 const gsCivs = ['Canada', 'Hungary', 'Inca', 'Mali', 'Māori', 'Ottomans', 'Phonecia', 'Sweden'];
+const nfCivs = ['Maya', 'Gran Colombia', 'Ethiopia', 'Byzantium', 'Gaul', 'Babylon', 'Vietnam', /*kublai khan*/ 'Portugal']
 
 const Index = () => {
 	const [disabledCivs, dispatchCiv] = useReducer(reducer, []);
