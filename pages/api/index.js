@@ -7,7 +7,7 @@ export default async (req, res) => {
 
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		if (req.query.leader) {
-			res.status(200).json(await db.collection('civs').findOne({ name: req.query.leader }));
+			res.status(200).json(await db.collection('leaders').findOne({ name: req.query.leader }));
 		} else {
 			res.status(200).json(
 				(await db.collection('civs').find({}).toArray()).map((leader) => leader.name).sort((leader1, leader2) => leader1.localeCompare(leader2))
