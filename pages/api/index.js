@@ -6,13 +6,11 @@ export default async (req, res) => {
 		const db = client.db('civ');
 
 		res.setHeader('Access-Control-Allow-Origin', '*');
-		if (req.query.civ) {
-			res.status(200).json(await db.collection('civs').findOne({ name: req.query.civ }));
+		if (req.query.leader) {
+			res.status(200).json(await db.collection('civs').findOne({ name: req.query.leader }));
 		} else {
 			res.status(200).json(
-				(await db.collection('civs').find({}).toArray())
-					.map((civ) => ({ name: civ.name, icon: civ.icon }))
-					.sort((civ1, civ2) => civ1.name.localeCompare(civ2.name))
+				(await db.collection('civs').find({}).toArray()).map((leader) => leader.name).sort((leader1, leader2) => leader1.localeCompare(leader2))
 			);
 		}
 	} catch (err) {

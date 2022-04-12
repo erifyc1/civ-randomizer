@@ -1,24 +1,26 @@
 import React from 'react';
 import iconify from '../utils/iconify';
 
-const CivCard = (props) => {
+const LeaderCard = (props) => {
 	return (
 		<>
 			<div className="outer">
 				<div>
-					<h2>{props.civ.name}</h2>
-					<img src={props.civ.icon} alt={props.civ.name + ' icon'} />
+					<h2>{props.leader.civilization}</h2>
+					<img src={`/images/civilization/${props.leader.civilization}.png`} alt={props.leader.civilization + ' icon'} />
 				</div>
 				<div>
-					<h2>{props.civ.leader.name}</h2>
-					<img src={props.civ.leader.portrait} alt={props.civ.leader.name} />
+					<h2>{props.leader.name}</h2>
+					<img src={`/images/leader/${props.leader.name}.png`} alt={props.leader.name} />
 				</div>
 			</div>
-			<h3>{props.civ.abilityName}</h3>
-			<p>{iconify(props.civ.ability)}</p>
-			<h3>{props.civ.leader.abilityName}</h3>
-			<p>{iconify(props.civ.leader.ability)}</p>
-			{props.civ.infrastructure.map((inf, i) => (
+			{props.leader.abilities.map((ability) => (
+				<>
+					<h3>{ability.name}</h3>
+					<p>{iconify(ability.description)}</p>
+				</>
+			))}
+			{props.leader.infrastructure.map((inf, i) => (
 				<React.Fragment key={i}>
 					<h3>
 						{inf.name} {inf.replaces === null ? (inf.district === null ? '(Unique Improvement)' : '(Unique Building)') : `(Replaces ${inf.replaces})`}
@@ -30,7 +32,7 @@ const CivCard = (props) => {
 					</ul>
 				</React.Fragment>
 			))}
-			{props.civ.unit.map((unit, i) => (
+			{props.leader.units.map((unit, i) => (
 				<React.Fragment key={i}>
 					<h3>
 						{unit.name} {unit.replaces === null ? '(Unique Unit)' : `(Replaces ${unit.replaces})`}
@@ -46,4 +48,4 @@ const CivCard = (props) => {
 	);
 };
 
-export default CivCard;
+export default LeaderCard;
