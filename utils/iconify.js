@@ -12,6 +12,7 @@ const urls = {
 	// mechanic
 	housing: '/images/icon/mechanic/Housing.png',
 	amenity: '/images/icon/mechanic/Amenities.png',
+	amenities: '/images/icon/mechanic/Amenities.png',
 	movement: '/images/icon/mechanic/Movement.png',
 	tourism: '/images/icon/mechanic/Tourism.png',
 	trader: '/images/icon/mechanic/TradeRoute.png',
