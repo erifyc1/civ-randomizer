@@ -25,6 +25,11 @@ const LeaderCard = (props) => {
 					<h3>
 						{inf.name} {inf.replaces === null ? (inf.district === null ? '(Unique Improvement)' : '(Unique Building)') : `(Replaces ${inf.replaces})`}
 					</h3>
+					{inf.production && (
+						<span>
+							<h4>Production Cost:</h4> {iconify(inf.production)}
+						</span>
+					)}
 					<ul>
 						{inf.effects.map((effect, i) => (
 							<li key={i}>{iconify(effect)}</li>
