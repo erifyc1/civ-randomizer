@@ -29,6 +29,8 @@ const urls = {
 	sight: '/images/icon/mechanic/Sight.png',
 	'build charge': '/images/icon/mechanic/Build_charge.png',
 	capital: '/images/icon/mechanic/Capital.png',
+	governor: '/images/icon/mechanic/Governor.png',
+
 
 	// combat
 	'combat strength': '/images/icon/combat/Combat_Strength.png',
@@ -44,10 +46,14 @@ const urls = {
 	sculpture: '/images/icon/great_works/Sculpture.png',
 	portrait: '/images/icon/great_works/Portrait.png',
 	artifact: '/images/icon/great_works/Artifact_Ancient.png',
+	'religious art': '/images/icon/great_works/ReligiousArt.png',
 	'classical artifact': '/images/icon/great_works/Artifact_Classical.png',
 	'medieval artifact': '/images/icon/great_works/Artifact_Medieval.png',
 	'renaissance artifact': '/images/icon/great_works/Artifact_Renaissance.png',
 	'industrial artifact': '/images/icon/great_works/Artifact_Industrial.png',
+	'great work of writing': '/images/icon/great_works/GreatWorkWriting.png',
+	'great work of music': '/images/icon/great_works/GreatWorkMusic.png',
+	'great work of art': '/images/icon/great_works/GreatWorkArt.png',
 
 	// strategic
 	horses: '/images/icon/strategic/Horses.png',
