@@ -13,7 +13,7 @@ const LeaderPreview = (props) => {
 					type: context.disabledLeaders.includes(props.leader) ? 'REMOVE_LEADER' : 'ADD_LEADER'
 				});
 			}}>
-			<img src={`/images/civilization/${props.leader}.png`} alt={props.leader + ' icon'} />
+			<img src={`/images/leader/${props.leader}.png`} alt={props.leader + ' icon'} />
 			<div>
 				<h3>{props.leader}</h3>
 				{context.disabledLeaders.includes(props.leader) && <p>Disabled</p>}
