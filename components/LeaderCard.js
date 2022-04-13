@@ -25,12 +25,12 @@ const LeaderCard = (props) => {
 					<h3>
 						{inf.name} {inf.replaces === null ? (inf.district === null ? '(Unique Improvement)' : '(Unique Building)') : `(Replaces ${inf.replaces})`}
 					</h3>
-					{inf.production && (
-						<span>
-							<h4>Production Cost:</h4> {iconify(inf.production)}
-						</span>
-					)}
 					<ul>
+						{inf.production && (
+							<li>
+								<h4>Production Cost:</h4> {iconify(inf.production)}
+							</li>
+						)}
 						{inf.effects.map((effect, i) => (
 							<li key={i}>{iconify(effect)}</li>
 						))}
@@ -42,21 +42,21 @@ const LeaderCard = (props) => {
 					<h3>
 						{unit.name} {unit.replaces === null ? '(Unique Unit)' : `(Replaces ${unit.replaces})`}
 					</h3>
-					<span>
-						<h4>Strength:</h4> {iconify(unit.strength)}
-					</span>
-					<span>
-						<h4>Movement:</h4> {iconify(unit.movement)}
-					</span>
-					{unit.ranged && (
-						<span>
-							<h4>Ranged:</h4> {iconify(unit.ranged)}
-						</span>
-					)}
-					<span>
-						<h4>Production Cost:</h4> {iconify(unit.production)}
-					</span>
 					<ul>
+						<li>
+							<h4>Combat Strength:</h4> {iconify(unit.strength)}
+						</li>
+						<li>
+							<h4>Movement:</h4> {iconify(unit.movement)}
+						</li>
+						{unit.ranged && (
+							<li>
+								<h4>Ranged Strength:</h4> {iconify(unit.rangedStrength)}
+							</li>
+						)}
+						<li>
+							<h4>Production Cost:</h4> {iconify(unit.production)}
+						</li>
 						{unit.special.map((special, i) => (
 							<li key={i}>{iconify(special)}</li>
 						))}

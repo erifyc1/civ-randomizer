@@ -37,7 +37,7 @@ const urls = {
 	'anti-air strength': '/images/icon/combat/Anti-Air_Strength.png',
 	'religious strength': '/images/icon/combat/Religious_Strength.png',
 	range: '/images/icon/combat/Range.png',
-	promotion: '/images/icon/combat/Promotion.png', 
+	promotion: '/images/icon/combat/Promotion.png',
 
 	// great works
 	relic: '/images/icon/great_works/Relic.png',
@@ -103,15 +103,17 @@ const urls = {
  */
 export default function iconify(text) {
 	const tokens = [];
-	let str = text;
+	let str = text,
+		i = 0;
 
 	while (str.match(/<[\w\s]+>/)) {
 		const match = str.match(/<[\w\s]+>/);
 		const idx = match.index;
 		tokens.push(str.slice(0, idx));
 		const repl = str.slice(idx, idx + match[0].length).slice(1, -1);
-		tokens.push(<img src={urls[repl.toLowerCase()]} alt={repl} />);
+		tokens.push(<img src={urls[repl.toLowerCase()]} key={i} alt={repl} />);
 		str = str.slice(idx + match[0].length);
+		i++;
 	}
 	tokens.push(str);
 
