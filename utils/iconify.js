@@ -36,7 +36,7 @@ const urls = {
 	'combat strength': '/images/icon/combat/Combat_Strength.png',
 	'ranged strength': '/images/icon/combat/Ranged_Strength.png',
 	'bombard strength': '/images/icon/combat/Bombard_Strength.png',
-	'anti-air strength': '/images/icon/combat/Anti-Air_Strength.png',
+	'antiair strength': '/images/icon/combat/Anti-Air_Strength.png',
 	'religious strength': '/images/icon/combat/Religious_Strength.png',
 	range: '/images/icon/combat/Range.png',
 	promotion: '/images/icon/combat/Promotion.png',
