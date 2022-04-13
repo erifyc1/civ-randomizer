@@ -10,7 +10,7 @@ export default async (req, res) => {
 			res.status(200).json(await db.collection('leaders').findOne({ name: req.query.leader }));
 		} else {
 			res.status(200).json(
-				(await db.collection('civs').find({}).toArray()).map((leader) => leader.name).sort((leader1, leader2) => leader1.localeCompare(leader2))
+				(await db.collection('leaders').find({}).toArray()).map((leader) => leader.name).sort((leader1, leader2) => leader1.localeCompare(leader2))
 			);
 		}
 	} catch (err) {
