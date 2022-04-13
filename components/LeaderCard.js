@@ -7,11 +7,11 @@ const LeaderCard = (props) => {
 			<div className="outer">
 				<div>
 					<h2>{props.leader.civilization}</h2>
-					<img src={`/images/civilization/${props.leader.civilization}.png`} alt={props.leader.civilization + ' icon'} />
+					<img src={`/images/civilization/${props.leader.civilization.replace(' ', '_')}.png`} alt={props.leader.civilization + ' icon'} />
 				</div>
 				<div>
 					<h2>{props.leader.name}</h2>
-					<img src={`/images/leader/${props.leader.name}.png`} alt={props.leader.name} />
+					<img src={`/images/leader/${props.leader.name.replace(' ', '_')}.png`} alt={props.leader.name} />
 				</div>
 			</div>
 			{props.leader.abilities.map((ability) => (
