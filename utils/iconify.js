@@ -45,6 +45,7 @@ const urls = {
 	relic: '/images/icon/great_works/Relic.png',
 	sculpture: '/images/icon/great_works/Sculpture.png',
 	portrait: '/images/icon/great_works/Portrait.png',
+	landscape: '/images/icon/great_works/GreatWorkArt.png',
 	artifact: '/images/icon/great_works/Artifact_Ancient.png',
 	'religious art': '/images/icon/great_works/ReligiousArt.png',
 	'classical artifact': '/images/icon/great_works/Artifact_Classical.png',
