@@ -117,7 +117,7 @@ const Index = () => {
 			</button>
 			<div id="toolbar">
 				<span>
-					<img src="/images/icon/general/BG.png" alt="Base Game Civs" />
+					<img src="/images/icon/general/base.png" alt="Base Game Civs" />
 					<label className={baseGameEnabled ? 'checked' : ''}>
 						<input
 							type="checkbox"
