@@ -86,6 +86,7 @@ const urls = {
 	aerodrome: '/images/icon/district/Aerodrome.png',
 	spaceport: '/images/icon/district/Spaceport.png',
 	'government plaza': '/images/icon/district/Government_Plaza.png',
+	'city center': '/images/icon/district/City_Center.png',
 
 	// tech
 
