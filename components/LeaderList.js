@@ -4,8 +4,8 @@ import LeaderPreview from './LeaderPreview';
 const LeaderList = (props) => {
 	return (
 		<ul id="civ-list">
-			{props.civs.map((civ, i) => (
-				<LeaderPreview key={i} civ={civ} />
+			{props.leaders.map((leader, i) => (
+				<LeaderPreview key={i} leader={leader} />
 			))}
 		</ul>
 	);

@@ -200,6 +200,10 @@ div#main div#chosen-civ ul li {
 	text-indent: 5%;
 }
 
+div#main div#chosen-civ ul li h4 {
+	display: inline;
+}
+
 div#main div#chosen-civ ul li img {
 	height: 1em;
 	width: 1em;

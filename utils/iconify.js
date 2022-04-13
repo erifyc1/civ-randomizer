@@ -27,25 +27,34 @@ const urls = {
 	envoy: '/images/icon/mechanic/Envoy.png',
 	power: '/images/icon/mechanic/Power.png',
 	sight: '/images/icon/mechanic/Sight.png',
+	'build charge': '/images/icon/mechanic/Build_charge.png',
+	capital: '/images/icon/mechanic/Capital.png',
+	governor: '/images/icon/mechanic/Governor.png',
+
 
 	// combat
 	'combat strength': '/images/icon/combat/Combat_Strength.png',
 	'ranged strength': '/images/icon/combat/Ranged_Strength.png',
 	'bombard strength': '/images/icon/combat/Bombard_Strength.png',
-	'anti-air strength': '/images/icon/combat/Anti-Air_Strength.png',
+	'antiair strength': '/images/icon/combat/Anti-Air_Strength.png',
 	'religious strength': '/images/icon/combat/Religious_Strength.png',
 	range: '/images/icon/combat/Range.png',
-	promotion: '/images/icon/combat/Promotion.png', 
+	promotion: '/images/icon/combat/Promotion.png',
 
 	// great works
 	relic: '/images/icon/great_works/Relic.png',
 	sculpture: '/images/icon/great_works/Sculpture.png',
 	portrait: '/images/icon/great_works/Portrait.png',
+	landscape: '/images/icon/great_works/GreatWorkArt.png',
 	artifact: '/images/icon/great_works/Artifact_Ancient.png',
+	'religious art': '/images/icon/great_works/ReligiousArt.png',
 	'classical artifact': '/images/icon/great_works/Artifact_Classical.png',
 	'medieval artifact': '/images/icon/great_works/Artifact_Medieval.png',
 	'renaissance artifact': '/images/icon/great_works/Artifact_Renaissance.png',
 	'industrial artifact': '/images/icon/great_works/Artifact_Industrial.png',
+	'great work of writing': '/images/icon/great_works/GreatWorkWriting.png',
+	'great work of music': '/images/icon/great_works/GreatWorkMusic.png',
+	'great work of art': '/images/icon/great_works/GreatWorkArt.png',
 
 	// strategic
 	horses: '/images/icon/strategic/Horses.png',
@@ -66,6 +75,8 @@ const urls = {
 	'great prophet': '/images/icon/great_people/Prophet.png',
 	'great artist': '/images/icon/great_people/Artist.png',
 	'great merchant': '/images/icon/great_people/Merchant.png',
+	'great person': '/images/icon/great_people/GreatPerson.png',
+	'great people': '/images/icon/great_people/GreatPerson.png',
 
 	// district
 	campus: '/images/icon/district/Campus.png',
@@ -83,7 +94,18 @@ const urls = {
 	neighborhood: '/images/icon/district/Neighborhood.png',
 	aerodrome: '/images/icon/district/Aerodrome.png',
 	spaceport: '/images/icon/district/Spaceport.png',
-	'government plaza': '/images/icon/district/Government_Plaza.png'
+	'government plaza': '/images/icon/district/Government_Plaza.png',
+	'city center': '/images/icon/district/City_Center.png',
+	district: '/images/icon/district/District.png',
+
+	// tech
+	flight: '/images/icon/tech/Flight.png',
+
+	// policy
+	'military policy': '/images/icon/policy/Military_Policy.png',
+	'economic policy': '/images/icon/policy/Economic_Policy.png',
+	'diplomatic policy': '/images/icon/policy/Diplomatic_Policy.png',
+	'wildcard policy': '/images/icon/policy/Wildcard_Policy.png'
 };
 
 /**
@@ -91,15 +113,17 @@ const urls = {
  */
 export default function iconify(text) {
 	const tokens = [];
-	let str = text;
+	let str = text,
+		i = 0;
 
 	while (str.match(/<[\w\s]+>/)) {
 		const match = str.match(/<[\w\s]+>/);
 		const idx = match.index;
 		tokens.push(str.slice(0, idx));
 		const repl = str.slice(idx, idx + match[0].length).slice(1, -1);
-		tokens.push(<img src={urls[repl.toLowerCase()]} alt={repl} />);
+		tokens.push(<img src={urls[repl.toLowerCase()]} key={i} alt={repl} />);
 		str = str.slice(idx + match[0].length);
+		i++;
 	}
 	tokens.push(str);
 

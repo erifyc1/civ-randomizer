@@ -103,7 +103,7 @@ const Index = () => {
 					const availableLeaders = leaders.filter((leader) => !disabledLeaders.includes(leader));
 					if (availableLeaders.length !== 0) {
 						const idx = Math.floor(availableLeaders.length * Math.random());
-						axios(`/api?leader=${availableLeaders[idx].name}`).then((res) => {
+						axios(`/api?leader=${availableLeaders[idx]}`).then((res) => {
 							const leader = res.data;
 							setSelectedLeader(leader);
 							dispatchLeader({
@@ -117,7 +117,7 @@ const Index = () => {
 			</button>
 			<div id="toolbar">
 				<span>
-					<img src="/images/icon/general/BG.png" alt="Base Game Civs" />
+					<img src="/images/icon/general/base.png" alt="Base Game Civs" />
 					<label className={baseGameEnabled ? 'checked' : ''}>
 						<input
 							type="checkbox"
