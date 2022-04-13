@@ -75,6 +75,8 @@ const urls = {
 	'great prophet': '/images/icon/great_people/Prophet.png',
 	'great artist': '/images/icon/great_people/Artist.png',
 	'great merchant': '/images/icon/great_people/Merchant.png',
+	'great person': '/images/icon/great_people/GreatPerson.png',
+	'great people': '/images/icon/great_people/GreatPerson.png',
 
 	// district
 	campus: '/images/icon/district/Campus.png',
