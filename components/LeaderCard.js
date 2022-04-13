@@ -28,7 +28,7 @@ const LeaderCard = (props) => {
 					<ul>
 						{inf.production && (
 							<li>
-								<h4>Production Cost:</h4> {iconify(inf.production)}
+								<h4>{iconify("<Production>")} Production Cost:</h4> {iconify(inf.production)}
 							</li>
 						)}
 						{inf.effects.map((effect, i) => (
@@ -44,18 +44,18 @@ const LeaderCard = (props) => {
 					</h3>
 					<ul>
 						<li>
-							<h4>Combat Strength:</h4> {iconify(unit.strength)}
+							<h4>{iconify("<Combat Strength>")} Combat Strength:</h4> {iconify(unit.strength)}
 						</li>
 						<li>
-							<h4>Movement:</h4> {iconify(unit.movement)}
+							<h4>{iconify("<Movement>")} Movement:</h4> {iconify(unit.movement)}
 						</li>
 						{unit.ranged && (
 							<li>
-								<h4>Ranged Strength:</h4> {iconify(unit.rangedStrength)}
+								<h4>{iconify("<Ranged Strength>")} Ranged Strength:</h4> {iconify(unit.rangedStrength)}
 							</li>
 						)}
 						<li>
-							<h4>Production Cost:</h4> {iconify(unit.production)}
+							<h4>{iconify("<Production>")} Production Cost:</h4> {iconify(unit.production)}
 						</li>
 						{unit.special.map((special, i) => (
 							<li key={i}>{iconify(special)}</li>
