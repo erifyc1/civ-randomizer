@@ -8,6 +8,8 @@
 @font-face {
 	font-family: 'HelveticaNeue';
     src: url('fonts/HelveticaNeue.ttf') format('truetype');
+}
+@font-face {
 	font-family: 'MinionPro';
 	src: url('fonts/MinionPro-Bold.otf') format('opentype'),
 		url('fonts/MinionPro-BoldCn.otf') format('opentype'),
