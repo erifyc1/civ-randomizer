@@ -2,26 +2,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: content-box;
-	font-family: 'MinionPro';
+	font-family: 'MyriadPro';
 }
 
-@font-face {
-	font-family: 'HelveticaNeue';
-    src: url('fonts/HelveticaNeue.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'MinionPro';
-	src: url('fonts/MinionPro-Bold.otf') format('opentype'),
-		url('fonts/MinionPro-BoldCn.otf') format('opentype'),
-		url('fonts/MinionPro-BoldCnIt.otf') format('opentype'),
-		url('fonts/MinionPro-BoldIt.otf') format('opentype'),
-		url('fonts/MinionPro-It.otf') format('opentype'),
-		url('fonts/MinionPro-Medium.otf') format('opentype'),
-		url('fonts/MinionPro-MediumIt.otf') format('opentype'),
-		url('fonts/MinionPro-Regular.otf') format('opentype'),
-		url('fonts/MinionPro-Semibold.otf') format('opentype'),
-		url('fonts/MinionPro-SemiboldIt.otf') format('opentype');
-}
+
 
 h1 {
 	position: relative;
@@ -48,9 +32,9 @@ p {
 div#__next {
 	display: grid;
 	grid-template:
-		'head button'
-		'toolbar button'
-		'main main' / 1fr 1fr;
+	'head button'
+	'toolbar button'
+	'main main' / 1fr 1fr;
 }
 
 div#toolbar {
@@ -273,4 +257,58 @@ div#civ-list-title {
 div#civ-list-title h2 {
 	position: relative;
 	left: 42%;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('fonts/HelveticaNeue.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'MinionPro';
+	src: url('fonts/MinionPro-Bold.otf') format('opentype'),
+		url('fonts/MinionPro-BoldCn.otf') format('opentype'),
+		url('fonts/MinionPro-BoldCnIt.otf') format('opentype'),
+		url('fonts/MinionPro-BoldIt.otf') format('opentype'),
+		url('fonts/MinionPro-It.otf') format('opentype'),
+		url('fonts/MinionPro-Medium.otf') format('opentype'),
+		url('fonts/MinionPro-MediumIt.otf') format('opentype'),
+		url('fonts/MinionPro-Regular.otf') format('opentype'),
+		url('fonts/MinionPro-Semibold.otf') format('opentype'),
+		url('fonts/MinionPro-SemiboldIt.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('fonts/MyriadPro-Bold.otf') format('opentype'),
+		url('fonts/MyriadPro-BoldCond.otf') format('opentype'),
+		url('fonts/MyriadPro-BoldCondIt.otf') format('opentype'),
+		url('fonts/MyriadPro-BoldIt.otf') format('opentype'),
+		url('fonts/MyriadPro-Cond.otf') format('opentype'),
+		url('fonts/MyriadPro-CondIt.otf') format('opentype'),
+		url('fonts/MyriadPro-It.otf') format('opentype'),
+		url('fonts/MyriadPro-Regular.otf') format('opentype'),
+		url('fonts/MyriadPro-Semibold-MOD.otf') format('opentype'),
+		url('fonts/MyriadPro-Semibold.otf') format('opentype'),
+		url('fonts/MyriadPro-SemiboldIt.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'NotoMono';
+	src: url('fonts/NotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src: url('fonts/NotoSans-Bold.ttf') format('opentype'),
+		url('fonts/NotoSans-Medium.ttf') format('opentype'),
+		url('fonts/NotoSans-Regular.ttf') format('opentype'),
+		url('fonts/NotoSansCJKjp-Bold.otf') format('opentype'),
+		url('fonts/NotoSansCJKjp-Medium.otf') format('opentype'),
+		url('fonts/NotoSansCJKjp-Regular.otf') format('opentype'),
+		url('fonts/NotoSansCJKkr-Bold.otf') format('opentype'),
+		url('fonts/NotoSansCJKkr-Medium.otf') format('opentype'),
+		url('fonts/NotoSansCJKkr-Regular.otf') format('opentype'),
+		url('fonts/NotoSansCJKsc-Bold.otf') format('opentype'),
+		url('fonts/NotoSansCJKsc-Medium.otf') format('opentype'),
+		url('fonts/NotoSansCJKsc-Regular.otf') format('opentype');
 }
