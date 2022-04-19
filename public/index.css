@@ -118,11 +118,11 @@ div#main {
 	grid-template-columns: 1fr 1fr;
 	grid-area: main;
 	margin: 1em;
+	height: 84vh;
 }
 
 div#main div#list {
 	background-color: rgb(73, 73, 175);
-	height: 84vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
