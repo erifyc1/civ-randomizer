@@ -197,6 +197,7 @@ div#main div#chosen-civ p {
 
 div#main div#chosen-civ ul {
 	list-style: none;
+	margin: 0.5em;
 }
 
 div#main div#chosen-civ ul li {
