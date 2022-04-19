@@ -202,6 +202,7 @@ div#main div#chosen-civ ul {
 div#main div#chosen-civ ul li {
 	color: white;
 	text-indent: 5%;
+	font-family: 'HelveticaNeue';
 }
 
 div#main div#chosen-civ ul li h4 {
