@@ -182,7 +182,6 @@ div#main div#chosen-civ {
 	padding: 1em;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	font-family: 'HelveticaNeue';
 }
 
 div#main div#chosen-civ img {
@@ -193,6 +192,7 @@ div#main div#chosen-civ img {
 div#main div#chosen-civ p {
 	margin: 0.5em;
 	text-indent: 5%;
+	font-family: 'HelveticaNeue';
 }
 
 div#main div#chosen-civ ul {
