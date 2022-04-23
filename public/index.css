@@ -12,6 +12,7 @@ h1 {
 	font-size: 4em;
 	left: 25%;
 	width: 75%;
+	font-family: 'Elan-ITC';
 }
 
 h2 {
@@ -102,6 +103,7 @@ button#randomize-button {
 	margin: calc(2em / 3) calc(20em / 3);
 	border-radius: 6px;
 	background-color: rgb(57, 57, 177);
+	background-size: cover;
 	border: 1px solid black;
 	color: white;
 	cursor: pointer;
@@ -315,4 +317,9 @@ div#civ-list-title h2 {
 		url('fonts/NotoSansCJKsc-Bold.otf') format('opentype'),
 		url('fonts/NotoSansCJKsc-Medium.otf') format('opentype'),
 		url('fonts/NotoSansCJKsc-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Elan-ITC';
+	src: url('fonts/Elan-ITC-Std-Medium.otf') format('opentype');
 }
