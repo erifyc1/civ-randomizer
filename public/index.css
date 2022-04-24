@@ -142,8 +142,48 @@ div#main div#list ul li.civ {
 	border: 1.5px solid black;
 	padding: 0.5em;
 	border-radius: 12px;
-	font-size: 1.75em;
+	font-size: 1.25em;
 	user-select: none;
+}
+
+div#main div#list ul li.civ h3 {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+div#main div#list ul li.civ h3.disabled {
+	text-decoration: line-through;
+}
+
+div#main div#list ul li.civ button {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 0;
+	border-radius: 6px;
+	background-size: cover;
+	border: 1px solid black;
+	color: white;
+	cursor: pointer;
+	font-size: 1em;
+	outline: none;
+	padding: 0.5em 1em;
+}
+
+div#main div#list ul li.civ button.enable-btn {
+	background-color: rgb(40, 161, 24);
+
+}
+
+div#main div#list ul li.civ button.enable-btn:hover {
+	background-color: rgb(32, 131, 16);
+}
+
+div#main div#list ul li.civ button.disable-btn {
+	background-color: rgb(172, 13, 13);
+}
+
+div#main div#list ul li.civ button.disable-btn:hover {
+	background-color: rgb(200, 15, 15);
 }
 
 div#main div#list ul li.civ.disabled {
