@@ -7,3 +7,6 @@ package-lock.json
 
 # Env vars
 .env
+
+# old db json
+db-archive/
