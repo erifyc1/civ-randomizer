@@ -4,6 +4,8 @@
 ## Link
 ### [Website](https://civ-randomizer.vercel.app)
 
+![img](/images/sample.png)
+
 ## Features
 -   Manually select a set of leaders, or use the sliders at the top left to disable expansions of leaders.
 -   Press the *Randomize* button to pick a random leader from your selection.
